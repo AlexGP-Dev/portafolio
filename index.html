@@ -1,21 +1,690 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Website Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>Alex Garcia | Ingeniero de Sistemas & Analista de Datos</title>
+    <!-- Google Fonts y Font Awesome -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-    <link rel="stylesheet" href="style.css">
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f9fafb;
+            color: #1e293b;
+            line-height: 1.5;
+            scroll-behavior: smooth;
+        }
 
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        /* Header / Navegación */
+        header {
+            background-color: #ffffff;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            backdrop-filter: blur(4px);
+            background-color: rgba(255, 255, 255, 0.95);
+        }
+
+        .nav-bar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 16px 0;
+            flex-wrap: wrap;
+        }
+
+        .logo {
+            font-weight: 700;
+            font-size: 1.5rem;
+            background: linear-gradient(135deg, #2563eb, #1e40af);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            letter-spacing: -0.5px;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 28px;
+            list-style: none;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            font-weight: 500;
+            color: #334155;
+            transition: color 0.2s;
+        }
+
+        .nav-links a:hover {
+            color: #2563eb;
+        }
+
+        /* Botón hamburguesa para móvil */
+        .menu-toggle {
+            display: none;
+            font-size: 1.6rem;
+            background: none;
+            border: none;
+            cursor: pointer;
+            color: #1e293b;
+        }
+
+        /* Botones generales */
+        .btn {
+            display: inline-block;
+            background-color: #2563eb;
+            color: white;
+            padding: 10px 24px;
+            border-radius: 40px;
+            text-decoration: none;
+            font-weight: 500;
+            transition: background 0.2s, transform 0.1s;
+            border: none;
+            cursor: pointer;
+        }
+
+        .btn-outline {
+            background: transparent;
+            border: 1px solid #2563eb;
+            color: #2563eb;
+        }
+
+        .btn-outline:hover {
+            background: #2563eb;
+            color: white;
+        }
+
+        .btn:hover {
+            background-color: #1e40af;
+            transform: translateY(-2px);
+        }
+
+        /* Hero */
+        .hero {
+            padding: 64px 0 48px;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 2.8rem;
+            font-weight: 700;
+            background: linear-gradient(135deg, #0f172a, #2563eb);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            margin-bottom: 16px;
+        }
+
+        .hero .tagline {
+            font-size: 1.25rem;
+            color: #334155;
+            max-width: 700px;
+            margin: 0 auto 24px;
+        }
+
+        .hero-badge {
+            display: inline-block;
+            background: #e0f2fe;
+            color: #0369a1;
+            padding: 6px 14px;
+            border-radius: 50px;
+            font-size: 0.85rem;
+            font-weight: 500;
+            margin-bottom: 20px;
+        }
+
+        .hero-stats {
+            display: flex;
+            justify-content: center;
+            gap: 32px;
+            margin-top: 32px;
+            flex-wrap: wrap;
+        }
+
+        .stat {
+            text-align: center;
+        }
+
+        .stat-number {
+            font-size: 1.8rem;
+            font-weight: 800;
+            color: #1e293b;
+        }
+
+        .stat-label {
+            font-size: 0.85rem;
+            color: #475569;
+        }
+
+        /* Secciones */
+        section {
+            padding: 64px 0;
+            border-bottom: 1px solid #e2e8f0;
+        }
+
+        .section-title {
+            font-size: 1.8rem;
+            font-weight: 700;
+            margin-bottom: 40px;
+            position: relative;
+            display: inline-block;
+        }
+
+        .section-title:after {
+            content: '';
+            position: absolute;
+            bottom: -8px;
+            left: 0;
+            width: 50%;
+            height: 3px;
+            background: #2563eb;
+            border-radius: 3px;
+        }
+
+        /* Habilidades: grid con categorías */
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 32px;
+        }
+
+        .skill-category {
+            background: white;
+            border-radius: 24px;
+            padding: 24px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
+            border: 1px solid #eef2ff;
+            transition: all 0.2s;
+        }
+
+        .skill-category h3 {
+            font-size: 1.3rem;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            color: #0f172a;
+        }
+
+        .skill-category h3 i {
+            color: #2563eb;
+            font-size: 1.4rem;
+        }
+
+        .skills-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+
+        .skill-tag {
+            background: #f1f5f9;
+            padding: 6px 14px;
+            border-radius: 40px;
+            font-size: 0.85rem;
+            font-weight: 500;
+            color: #1e293b;
+        }
+
+        /* Proyectos */
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+            gap: 32px;
+        }
+
+        .project-card {
+            background: white;
+            border-radius: 28px;
+            overflow: hidden;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.03);
+            transition: transform 0.2s, box-shadow 0.2s;
+            border: 1px solid #edf2f7;
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+        }
+
+        .project-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 20px 30px -12px rgba(0, 0, 0, 0.1);
+        }
+
+        .project-content {
+            padding: 24px;
+            flex: 1;
+        }
+
+        .project-title {
+            font-size: 1.35rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+
+        .project-tech {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin: 16px 0 12px;
+        }
+
+        .tech-badge {
+            background: #e6f0ff;
+            color: #1e40af;
+            padding: 4px 12px;
+            border-radius: 30px;
+            font-size: 0.7rem;
+            font-weight: 600;
+        }
+
+        .project-desc {
+            color: #334155;
+            margin-bottom: 16px;
+            font-size: 0.9rem;
+        }
+
+        .project-impact {
+            background: #f8fafc;
+            padding: 12px;
+            border-radius: 16px;
+            margin-top: 12px;
+            font-size: 0.85rem;
+            border-left: 3px solid #2563eb;
+        }
+
+        .project-footer {
+            padding: 16px 24px 24px;
+            border-top: 1px solid #eef2ff;
+        }
+
+        /* sobre mí */
+        .about-wrap {
+            display: flex;
+            gap: 40px;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+
+        .about-text {
+            flex: 2;
+        }
+
+        .about-text p {
+            margin-bottom: 16px;
+            font-size: 1rem;
+        }
+
+        .contact-links {
+            margin-top: 24px;
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .contact-icon {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: #f1f5f9;
+            padding: 8px 18px;
+            border-radius: 40px;
+            text-decoration: none;
+            color: #1e293b;
+            font-weight: 500;
+            transition: background 0.2s;
+        }
+
+        .contact-icon i {
+            font-size: 1.2rem;
+            color: #2563eb;
+        }
+
+        .contact-icon:hover {
+            background: #e2e8f0;
+        }
+
+        footer {
+            text-align: center;
+            padding: 32px;
+            font-size: 0.85rem;
+            color: #64748b;
+        }
+
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+                flex-direction: column;
+                width: 100%;
+                background: white;
+                padding: 16px 0;
+                gap: 16px;
+            }
+
+            .nav-links.show {
+                display: flex;
+            }
+
+            .menu-toggle {
+                display: block;
+            }
+
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .hero .tagline {
+                font-size: 1rem;
+            }
+
+            .section-title {
+                font-size: 1.5rem;
+            }
+
+            .projects-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
 </head>
 
 <body>
-    <div class="contenedor-imagen"></div>
-    
-    <a href="contenido.html" target="_blank" class="boton">Contenido</a>
+    <header>
+        <div class="container">
+            <div class="nav-bar">
+                <div class="logo">Alex Garcia</div>
+                <button class="menu-toggle" id="mobileMenuBtn"><i class="fas fa-bars"></i></button>
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="#home">Inicio</a></li>
+                    <li><a href="#habilidades">Habilidades</a></li>
+                    <li><a href="#proyectos">Proyectos</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
 
+    <main>
+        <!-- Hero -->
+        <section id="home" style="padding-top: 40px;">
+            <div class="container hero">
+                <div class="hero-badge">🔧 Ingeniero de Sistemas | Analista de Datos</div>
+                <h1>Convierto datos en decisiones <br>y sistemas en resultados</h1>
+                <p class="tagline">11 años en TI · 6 meses como analista de datos, pero con la visión de construir
+                    soluciones end-to-end: Data Warehouse, APIs, automatización IA, apps biométricas y ERPs.</p>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <div class="stat-number">18+</div>
+                        <div class="stat-label">años de histórico DWH</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number">2</div>
+                        <div class="stat-label">ERPs implementados</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number">100+</div>
+                        <div class="stat-label">horas/mes automatizadas</div>
+                    </div>
+                </div>
+                <div style="margin-top: 32px;">
+                    <a href="#proyectos" class="btn">Explorar proyectos <i class="fas fa-arrow-right"></i></a>
+                    <a href="#contacto" class="btn btn-outline" style="margin-left: 12px;">Contactar</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Habilidades -->
+        <section id="habilidades">
+            <div class="container">
+                <h2 class="section-title">Competencias clave</h2>
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <h3><i class="fas fa-database"></i> Ingeniería de Datos</h3>
+                        <div class="skills-list">
+                            <span class="skill-tag">Data Warehouse (Kimball)</span>
+                            <span class="skill-tag">SQL/T-SQL avanzado</span>
+                            <span class="skill-tag">Modelado dimensional</span>
+                            <span class="skill-tag">ETL con N8N</span>
+                            <span class="skill-tag">Azure (App Service, API)</span>
+                            <span class="skill-tag">Integración API REST</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3><i class="fas fa-chart-line"></i> BI & Análisis</h3>
+                        <div class="skills-list">
+                            <span class="skill-tag">Power BI</span>
+                            <span class="skill-tag">Crystal Reports</span>
+                            <span class="skill-tag">Excel Avanzado</span>
+                            <span class="skill-tag">Análisis profundo de negocio</span>
+                            <span class="skill-tag">Dashboards ejecutivos</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3><i class="fas fa-microchip"></i> Automatización & IA</h3>
+                        <div class="skills-list">
+                            <span class="skill-tag">n8n (automatizaciones)</span>
+                            <span class="skill-tag">Agentes IA + Kommo CRM</span>
+                            <span class="skill-tag">Integración WhatsApp API</span>
+                            <span class="skill-tag">LLM / GPT para respuestas</span>
+                            <span class="skill-tag">Webhooks</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3><i class="fas fa-laptop-code"></i> Desarrollo Full Stack</h3>
+                        <div class="skills-list">
+                            <span class="skill-tag">Node.js / JavaScript</span>
+                            <span class="skill-tag">Visual .NET / T-SQL</span>
+                            <span class="skill-tag">Apps empresariales</span>
+                            <span class="skill-tag">GitHub + Azure CI/CD</span>
+                            <span class="skill-tag">HTML/CSS</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3><i class="fas fa-building"></i> Negocio & Estrategia</h3>
+                        <div class="skills-list">
+                            <span class="skill-tag">Implementación de ERPs</span>
+                            <span class="skill-tag">CRM Kommo</span>
+                            <span class="skill-tag">Consultoría técnicas de negocio</span>
+                            <span class="skill-tag">Requisitos funcionales</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Proyectos destacados -->
+        <section id="proyectos">
+            <div class="container">
+                <h2 class="section-title">Proyectos estratégicos</h2>
+                <div class="projects-grid">
+
+                    <!-- Proyecto 1: Agente IA n8n + Kommo -->
+                    <div class="project-card">
+                        <div class="project-content">
+                            <div class="project-title">🤖 Agente IA de atención al cliente</div>
+                            <div class="project-tech">
+                                <span class="tech-badge">n8n</span>
+                                <span class="tech-badge">Kommo CRM</span>
+                                <span class="tech-badge">OpenAI / LLM</span>
+                                <span class="tech-badge">API WhatsApp</span>
+                            </div>
+                            <div class="project-desc">
+                                Automatización inteligente que responde preguntas frecuentes, estado de pedidos y
+                                derivación a humanos. Integración directa con Kommo mediante webhooks.
+                            </div>
+                            <div class="project-impact">
+                                📈 <strong>Impacto:</strong> Respuesta instantánea 24/7 · 40% de consultas resueltas sin
+                                intervención · Ahorro de 20h/semana en atención.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Proyecto 2: Data Warehouse + API Azure -->
+                    <div class="project-card">
+                        <div class="project-content">
+                            <div class="project-title">🏭 Data Warehouse 18 años histórico</div>
+                            <div class="project-tech">
+                                <span class="tech-badge">SQL Server</span>
+                                <span class="tech-badge">Modelo estrella</span>
+                                <span class="tech-badge">Azure</span>
+                                <span class="tech-badge">ETL N8N</span>
+                            </div>
+                            <div class="project-desc">
+                                Arquitectura de datos que unifica ERP, ventas y CRM. API REST en Azure que consulta el
+                                DWH + BD del ERP en tiempo real.
+                            </div>
+                            <div class="project-impact">
+                                ⚡ <strong>Resultado:</strong> consultas de 3 días → 2 segundos · Base para dashboards y
+                                aplicaciones comerciales.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Proyecto 3: App web compras históricas (equipo comercial) -->
+                    <div class="project-card">
+                        <div class="project-content">
+                            <div class="project-title">📱 Consultor de compras - Equipo comercial</div>
+                            <div class="project-tech">
+                                <span class="tech-badge">Node.js</span>
+                                <span class="tech-badge">SQL</span>
+                                <span class="tech-badge">API propia</span>
+                            </div>
+                            <div class="project-desc">
+                                Herramienta interna para asesores: consulta por cédula o celular todas las compras
+                                históricas desde hace 18 años. Potencia la gestión de clientes.
+                            </div>
+                            <div class="project-impact">
+                                🚀 <strong>Eficiencia comercial:</strong> Tiempo de respuesta de 10 minutos → 5 segundos
+                                · usado a diario por 15 agentes.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Proyecto 4: App biométrica control de empleados -->
+                    <div class="project-card">
+                        <div class="project-content">
+                            <div class="project-title">👥 Registro biométrico · Turnos y horas extras</div>
+                            <div class="project-tech">
+                                <span class="tech-badge">Visual .NET</span>
+                                <span class="tech-badge">T-SQL</span>
+                                <span class="tech-badge">Windows Forms</span>
+                            </div>
+                            <div class="project-desc">
+                                Aplicación completa para control de asistencia, gestión de turnos, cálculo automático de
+                                horas extras, novedades (incapacidades, permisos). Integración con dispositivos
+                                biométricos.
+                            </div>
+                            <div class="project-impact">
+                                ✅ <strong>Resultado:</strong> 95% menos errores en nómina · ahorro de 10h/semana RRHH ·
+                                trazabilidad total.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Proyecto 5: Intranet en Azure + GitHub -->
+                    <div class="project-card">
+                        <div class="project-content">
+                            <div class="project-title">🌐 Intranet Corporativa Azure</div>
+                            <div class="project-tech">
+                                <span class="tech-badge">Azure App Service</span>
+                                <span class="tech-badge">GitHub Actions</span>
+                                <span class="tech-badge">HTML/CSS/JS</span>
+                            </div>
+                            <div class="project-desc">
+                                Portal interno para comunicaciones y herramientas. Despliegue continuo desde GitHub,
+                                alta disponibilidad. Centraliza documentación y acceso a aplicaciones internas.
+                            </div>
+                            <div class="project-impact">
+                                📌 100% adopción por empleados · reducción de correos internos en 60%.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Proyecto 6: Catálogo + Endpoint propio -->
+                    <div class="project-card">
+                        <div class="project-content">
+                            <div class="project-title">📦 Catálogo de productos API-first</div>
+                            <div class="project-tech">
+                                <span class="tech-badge">Node.js</span>
+                                <span class="tech-badge">API REST</span>
+                                <span class="tech-badge">Frontend</span>
+                            </div>
+                            <div class="project-desc">
+                                Desarrollo de endpoint de productos consumido por CRM, equipo comercial y canales
+                                digitales. Construcción de interfaz interna para gestión.
+                            </div>
+                            <div class="project-impact">
+                                🔁 Reutilización en múltiples canales · Actualización en tiempo real del inventario.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sobre mí + experiencia en negocio -->
+        <section id="about">
+            <div class="container">
+                <h2 class="section-title">Más que ingeniero: socio del negocio</h2>
+                <div class="about-wrap">
+                    <div class="about-text">
+                        <p>Soy <strong>Ingeniero de Sistemas</strong> con 11 años de trayectoria en TI. Implementé
+                            <strong>2 ERPs</strong> desde cero, lideré integraciones críticas (API de WhatsApp, CRM
+                            Kommo) y construí automatizaciones robustas con N8N. En los últimos 6 meses como
+                            <strong>Analista de Datos</strong> he potenciado esa base técnica para convertir datos en
+                            valor tangible.</p>
+                        <p>Mi diferencial: no solo entrego dashboards, sino que diseño <strong>Data Warehouses, APIs y
+                                aplicaciones completas</strong> que resuelven problemas reales: desde control horario
+                            biométrico hasta agentes IA que atienden clientes. Entiendo el lenguaje del negocio y la
+                            tecnología.</p>
+                        <div class="contact-links" id="contacto">
+                            <a href="#" class="contact-icon"><i class="fab fa-github"></i> GitHub</a>
+                            <a href="#" class="contact-icon"><i class="fab fa-linkedin-in"></i> LinkedIn</a>
+                            <a href="#" class="contact-icon"><i class="fas fa-envelope"></i> alex.garcia@ejemplo.com</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>© 2025 Alex Garcia — Ingeniero de Sistemas & Analista de Datos. Construyendo soluciones end-to-end.</p>
+        </div>
+    </footer>
+
+    <!-- Mobile menu script -->
+    <script>
+        const toggleBtn = document.getElementById('mobileMenuBtn');
+        const navLinks = document.getElementById('navLinks');
+        toggleBtn.addEventListener('click', () => {
+            navLinks.classList.toggle('show');
+        });
+        // Cerrar menú al hacer click en enlace
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.classList.remove('show');
+            });
+        });
+    </script>
 </body>
 
 </html>
