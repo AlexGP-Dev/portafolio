@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-    <title>Alex Garcia | Ingeniero de Sistemas & Analista de Datos</title>
+    <title>Alex Garcia | Socio Estratégico de Datos</title>
     <!-- Google Fonts & Font Awesome -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;400;500;600;700&display=swap"
         rel="stylesheet">
@@ -90,13 +90,14 @@
             display: inline-block;
             background-color: #2563eb;
             color: white;
-            padding: 10px 24px;
+            padding: 10px 28px;
             border-radius: 40px;
             text-decoration: none;
-            font-weight: 500;
-            transition: background 0.2s, transform 0.1s;
+            font-weight: 600;
+            transition: all 0.2s;
             border: none;
             cursor: pointer;
+            font-size: 0.95rem;
         }
 
         .btn-outline {
@@ -113,6 +114,7 @@
         .btn:hover {
             background-color: #1e40af;
             transform: translateY(-2px);
+            box-shadow: 0 6px 14px rgba(37, 99, 235, 0.25);
         }
 
         /* Hero */
@@ -128,14 +130,16 @@
             -webkit-background-clip: text;
             background-clip: text;
             color: transparent;
-            margin-bottom: 16px;
+            margin-bottom: 20px;
+            line-height: 1.2;
         }
 
         .hero .tagline {
-            font-size: 1.25rem;
+            font-size: 1.2rem;
             color: #334155;
-            max-width: 700px;
+            max-width: 750px;
             margin: 0 auto 24px;
+            font-weight: 500;
         }
 
         .hero-badge {
@@ -145,15 +149,15 @@
             padding: 6px 14px;
             border-radius: 50px;
             font-size: 0.85rem;
-            font-weight: 500;
+            font-weight: 600;
             margin-bottom: 20px;
         }
 
         .hero-stats {
             display: flex;
             justify-content: center;
-            gap: 32px;
-            margin-top: 32px;
+            gap: 40px;
+            margin-top: 40px;
             flex-wrap: wrap;
         }
 
@@ -162,7 +166,7 @@
         }
 
         .stat-number {
-            font-size: 1.8rem;
+            font-size: 2rem;
             font-weight: 800;
             color: #1e293b;
         }
@@ -170,6 +174,7 @@
         .stat-label {
             font-size: 0.85rem;
             color: #475569;
+            max-width: 140px;
         }
 
         /* Secciones */
@@ -191,13 +196,13 @@
             position: absolute;
             bottom: -8px;
             left: 0;
-            width: 50%;
+            width: 60%;
             height: 3px;
             background: #2563eb;
             border-radius: 3px;
         }
 
-        /* Habilidades */
+        /* Habilidades (Áreas de impacto) */
         .skills-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -207,9 +212,15 @@
         .skill-category {
             background: white;
             border-radius: 24px;
-            padding: 24px;
+            padding: 28px;
             box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
             border: 1px solid #eef2ff;
+            transition: all 0.2s;
+        }
+
+        .skill-category:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 12px 24px -12px rgba(0, 0, 0, 0.1);
         }
 
         .skill-category h3 {
@@ -241,7 +252,7 @@
             color: #1e293b;
         }
 
-        /* Proyectos - Tarjetas con imagen */
+        /* Tarjetas de proyectos (énfasis en impacto) */
         .projects-grid {
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
@@ -273,7 +284,6 @@
             display: block;
             transition: transform 0.3s ease, filter 0.2s;
             cursor: pointer;
-            /* Manito al pasar el cursor */
         }
 
         .project-img:hover {
@@ -292,7 +302,8 @@
         .project-title {
             font-size: 1.35rem;
             font-weight: 700;
-            margin-bottom: 10px;
+            margin-bottom: 12px;
+            color: #0f172a;
         }
 
         .project-tech {
@@ -315,18 +326,50 @@
             color: #334155;
             margin-bottom: 16px;
             font-size: 0.9rem;
+            line-height: 1.4;
         }
 
         .project-impact {
             background: #f8fafc;
-            padding: 12px;
+            padding: 14px;
             border-radius: 16px;
             margin-top: 12px;
             font-size: 0.85rem;
             border-left: 3px solid #2563eb;
+            font-weight: 500;
         }
 
-        /* Lightbox (imagen ampliada en el centro) */
+        /* Sección de impacto de negocio (nueva) */
+        .impact-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 24px;
+            margin-top: 20px;
+        }
+
+        .impact-card {
+            background: white;
+            border-radius: 24px;
+            padding: 24px 20px;
+            text-align: center;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.02);
+            border: 1px solid #eef2ff;
+        }
+
+        .impact-number {
+            font-size: 2.5rem;
+            font-weight: 800;
+            color: #2563eb;
+            line-height: 1.2;
+        }
+
+        .impact-label {
+            font-size: 0.9rem;
+            color: #334155;
+            margin-top: 8px;
+        }
+
+        /* Lightbox */
         .lightbox-overlay {
             position: fixed;
             top: 0;
@@ -366,7 +409,7 @@
             color: #ccc;
         }
 
-        /* Sobre mí y contacto */
+        /* Sobre mí / Socio de negocio */
         .about-wrap {
             display: flex;
             gap: 40px;
@@ -379,14 +422,15 @@
         }
 
         .about-text p {
-            margin-bottom: 16px;
+            margin-bottom: 18px;
             font-size: 1rem;
+            line-height: 1.5;
         }
 
         .contact-links {
-            margin-top: 24px;
+            margin-top: 28px;
             display: flex;
-            gap: 20px;
+            gap: 16px;
             flex-wrap: wrap;
         }
 
@@ -456,6 +500,10 @@
             .project-img {
                 height: 170px;
             }
+
+            .hero-stats {
+                gap: 20px;
+            }
         }
     </style>
 </head>
@@ -468,220 +516,225 @@
                 <button class="menu-toggle" id="mobileMenuBtn"><i class="fas fa-bars"></i></button>
                 <ul class="nav-links" id="navLinks">
                     <li><a href="#home">Inicio</a></li>
-                    <li><a href="#habilidades">Habilidades</a></li>
-                    <li><a href="#proyectos">Proyectos</a></li>
-                    <li><a href="#contacto">Contacto</a></li>
+                    <li><a href="#impacto">Impacto</a></li>
+                    <li><a href="#proyectos">Casos de éxito</a></li>
+                    <li><a href="#contacto">Conectar</a></li>
                 </ul>
             </div>
         </div>
     </header>
 
     <main>
+        <!-- Hero con enfoque de socio estratégico -->
         <section id="home" style="padding-top: 40px;">
             <div class="container hero">
-                <div class="hero-badge">🔧 Ingeniero de Sistemas | Analista de Datos | Dev Full Stack</div>
-                <h1>De la infraestructura al insight<br>decisiones basadas en datos</h1>
-                <p class="tagline">11 años en TI y en analisis de datos, construyendo Data Warehouses, APIs,
-                    automatización IA y sistemas empresariales.</p>
+                <div class="hero-badge">📊 Socio Estratégico de Datos</div>
+                <h1>Convierto datos dispersos<br>en decisiones rentables</h1>
+                <p class="tagline">11 años conectando procesos, sistemas y equipos para que la gerencia tome mejores
+                    decisiones en menos tiempo. No solo analizo: construyo la infraestructura, las automatizaciones y
+                    los dashboards que transforman el negocio.</p>
                 <div class="hero-stats">
                     <div class="stat">
                         <div class="stat-number">18+</div>
                         <div class="stat-label">años histórico DWH</div>
                     </div>
                     <div class="stat">
-                        <div class="stat-number">2</div>
-                        <div class="stat-label">ERPs implementados</div>
-                    </div>
-                    <div class="stat">
-                        <div class="stat-number">20+</div>
-                        <div class="stat-label">Reportes personalizados</div>
-                    </div>
-                    <div class="stat">
                         <div class="stat-number">10+</div>
-                        <div class="stat-label">Aplicaciones desarrolladas</div>
+                        <div class="stat-label">aplicaciones desarrolladas</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number">80%</div>
+                        <div class="stat-label">menos reportes manuales</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number">3 días → 2 seg</div>
+                        <div class="stat-label">consultas históricas</div>
                     </div>
                 </div>
-                <div style="margin-top: 32px;">
-                    <a href="#proyectos" class="btn">Ver proyectos <i class="fas fa-arrow-right"></i></a>
-                    <a href="#contacto" class="btn btn-outline" style="margin-left: 12px;">Contactar</a>
+                <div style="margin-top: 40px;">
+                    <a href="#proyectos" class="btn">Ver casos de éxito <i class="fas fa-arrow-right"></i></a>
+                    <a href="#contacto" class="btn btn-outline" style="margin-left: 16px;">Contactar</a>
                 </div>
             </div>
         </section>
 
-        <section id="habilidades">
+        <!-- Nueva sección: Impacto de negocio cuantificable -->
+        <section id="impacto">
             <div class="container">
-                <h2 class="section-title">Competencias clave</h2>
-                <div class="skills-grid">
-                    <div class="skill-category">
-                        <h3><i class="fas fa-database"></i> Ingeniería de Datos</h3>
-                        <div class="skills-list"><span class="skill-tag">Data Warehouse</span><span
-                                class="skill-tag">SQL/T-SQL</span><span class="skill-tag">Python</span><span
-                                class="skill-tag">Modelado
-                                dimensional</span><span class="skill-tag">ETL con N8N</span><span
-                                class="skill-tag">Azure</span><span class="skill-tag">APIs REST</span></div>
+                <h2 class="section-title">Impacto medible en el negocio</h2>
+                <div class="impact-grid">
+                    <div class="impact-card">
+                        <div class="impact-number">USD 20k - 60k</div>
+                        <div class="impact-label">ahorro anual estimado (DWH)</div>
                     </div>
-                    <div class="skill-category">
-                        <h3><i class="fas fa-chart-line"></i> BI & Analítica</h3>
-                        <div class="skills-list"><span class="skill-tag">Power BI</span><span class="skill-tag">Crystal
-                                Reports</span><span class="skill-tag">Excel Avanzado</span><span class="skill-tag">20+
-                                reportes</span><span class="skill-tag">Dashboards ejecutivos</span></div>
+                    <div class="impact-card">
+                        <div class="impact-number">95%</div>
+                        <div class="impact-label">menos errores en nómina (biométrico)</div>
                     </div>
-                    <div class="skill-category">
-                        <h3><i class="fas fa-microchip"></i> Automatización & IA</h3>
-                        <div class="skills-list"><span class="skill-tag">n8n</span><span class="skill-tag">Agentes IA +
-                                Kommo</span><span class="skill-tag">WhatsApp API</span><span class="skill-tag">LLM /
-                                GPT</span></div>
+                    <div class="impact-card">
+                        <div class="impact-number">40%</div>
+                        <div class="impact-label">consultas IA resueltas sin humanos</div>
                     </div>
-                    <div class="skill-category">
-                        <h3><i class="fas fa-laptop-code"></i> Desarrollo</h3>
-                        <div class="skills-list"><span class="skill-tag">Node.js</span><span class="skill-tag">Visual
-                                .NET</span><span class="skill-tag">GitHub + Azure CI/CD</span><span
-                                class="skill-tag">JavaScript</span><span class="skill-tag">HTML/CSS</span></div>
+                    <div class="impact-card">
+                        <div class="impact-number">+120h/mes</div>
+                        <div class="impact-label">productividad recuperada</div>
                     </div>
                 </div>
+                <p
+                    style="margin-top: 32px; font-size: 0.95rem; color: #334155; text-align: center; max-width: 800px; margin-left: auto; margin-right: auto;">
+                    Proyectos diseñados para que cada área —ventas, RRHH, operaciones, gerencia— pase de reportes
+                    manuales a dashboards y automatizaciones que aceleran la toma de decisiones.</p>
             </div>
         </section>
 
-        <!-- Proyectos con imágenes personalizables y lightbox -->
+        <!-- Proyectos como casos de éxito (actualizados: catálogo + intranet integradora) -->
         <section id="proyectos">
             <div class="container">
-                <h2 class="section-title">Proyectos estratégicos</h2>
+                <h2 class="section-title">Casos de éxito: del problema a la solución</h2>
                 <div class="projects-grid">
-
-                    <!-- Proyecto 1: Agente IA + Kommo -->
-                    <div class="project-card">
-                        <img class="project-img" src="https://i.ibb.co/Ps6rkphY/IA-para-Kommo.webp" alt="Agente IA n8n"
-                            loading="lazy">
-                        <div class="project-content">
-                            <div class="project-title">🤖 Agente IA atención al cliente</div>
-                            <div class="project-tech"><span class="tech-badge">n8n</span><span class="tech-badge">Kommo
-                                    CRM</span><span class="tech-badge">OpenAI</span><span class="tech-badge">WhatsApp
-                                    API</span></div>
-                            <div class="project-desc">Automatización inteligente que responde 24/7, integración con
-                                Kommo mediante webhooks y derivación a humanos.</div>
-                            <div class="project-impact">📈 40% consultas resueltas sin agente · ahorro 20h/semana ·
-                                respuesta instantánea.</div>
-                        </div>
-                    </div>
-
-                    <!-- Proyecto 2: Data Warehouse + API Azure -->
+                    <!-- 1. Data Warehouse 18 años -->
                     <div class="project-card">
                         <img class="project-img"
-                            src="https://placehold.co/600x400/1e40af/white?text=Data+Warehouse+Azure" alt="DWH y API">
+                            src="https://placehold.co/600x400/1e40af/white?text=Data+Warehouse+18+años"
+                            alt="DWH histórico">
                         <div class="project-content">
-                            <div class="project-title">🏭 DWH 18 años + API en Azure</div>
+                            <div class="project-title">🏭 Centralización de 18 años de operación</div>
                             <div class="project-tech"><span class="tech-badge">SQL Server</span><span
                                     class="tech-badge">Modelo estrella</span><span class="tech-badge">Azure</span><span
                                     class="tech-badge">ETL N8N</span></div>
-                            <div class="project-desc">Data Warehouse unificado con histórico desde 2008. API REST que
-                                consulta DWH y ERP en tiempo real.</div>
-                            <div class="project-impact">⚡ consultas de 3 días → 2 segundos · base para dashboards y apps
-                                comerciales.</div>
+                            <div class="project-desc"><strong>Problema:</strong> Datos fragmentados en múltiples ERP →
+                                reportes históricos tomaban días, sin trazabilidad.</div>
+                            <div class="project-impact">📌 <strong>Resultado:</strong> consultas de 3 días → 2 segundos
+                                · ahorro estimado USD 20k-60k anuales · permitió analizar tendencias de rentabilidad y
+                                clientes a 18 años.</div>
                         </div>
                     </div>
-
-                    <!-- Proyecto 3: App web compras históricas -->
+                    <!-- 2. Integración CRM + IA + APIs -->
                     <div class="project-card">
-                        <img class="project-img" src="https://placehold.co/600x400/0f172a/white?text=Consulta+Comercial"
-                            alt="App equipo comercial">
+                        <img class="project-img" src="https://i.ibb.co/Ps6rkphY/IA-para-Kommo.webp"
+                            alt="Agente IA Kommo">
                         <div class="project-content">
-                            <div class="project-title">📱 Consultor compras - Equipo comercial</div>
-                            <div class="project-tech"><span class="tech-badge">Node.js</span><span
-                                    class="tech-badge">SQL</span><span class="tech-badge">API propia</span></div>
-                            <div class="project-desc">Herramienta interna: consulta por cédula/celular todas las compras
-                                de los últimos 18 años.</div>
-                            <div class="project-impact">🚀 de 10 min → 5 seg · usado por 15 agentes a diario.</div>
+                            <div class="project-title">🤝 CRM + IA: datos de clientes en tiempo real</div>
+                            <div class="project-tech"><span class="tech-badge">n8n</span><span
+                                    class="tech-badge">Kommo</span><span class="tech-badge">OpenAI</span><span
+                                    class="tech-badge">API REST</span></div>
+                            <div class="project-desc"><strong>Problema:</strong> Equipo comercial con información
+                                incompleta y desactualizada → pérdida de oportunidades.</div>
+                            <div class="project-impact">📌 <strong>Resultado:</strong> +70% menos tiempo en búsquedas
+                                manuales · agente IA resuelve 40% de consultas · sincronización automática 24/7.</div>
                         </div>
                     </div>
-
-                    <!-- Proyecto 4: App biométrica -->
-                    <div class="project-card">
-                        <img class="project-img" src="https://placehold.co/600x400/334155/white?text=Biometric+System"
-                            alt="Registro biométrico">
-                        <div class="project-content">
-                            <div class="project-title">👥 Registro biométrico · Turnos y horas extras</div>
-                            <div class="project-tech"><span class="tech-badge">Visual .NET</span><span
-                                    class="tech-badge">T-SQL</span></div>
-                            <div class="project-desc">Control de asistencia, turnos, cálculo automático de horas extras
-                                y novedades (incapacidades, permisos).</div>
-                            <div class="project-impact">✅ 95% menos errores en nómina · ahorro 10h/semana RRHH.</div>
-                        </div>
-                    </div>
-
-                    <!-- Proyecto 5: 20+ Reportes personalizados y Tableros BI -->
+                    <!-- 3. Tableros de control y reportes personalizados -->
                     <div class="project-card">
                         <img class="project-img"
-                            src="https://placehold.co/600x400/2563eb/white?text=Power+BI+%26+Crystal+Reports"
-                            alt="Reportes y tableros BI">
+                            src="https://placehold.co/600x400/2563eb/white?text=Power+BI+Dashboards"
+                            alt="Dashboards ERP">
                         <div class="project-content">
-                            <div class="project-title">📊 20+ reportes & múltiples tableros BI</div>
+                            <div class="project-title">📊 Autonomía analítica para cada área</div>
                             <div class="project-tech"><span class="tech-badge">Power BI</span><span
                                     class="tech-badge">Crystal Reports</span><span class="tech-badge">SQL
-                                    analítico</span><span class="tech-badge">Excel</span></div>
-                            <div class="project-desc">Construcción de más de 20 reportes personalizados para áreas de
-                                ventas, inventario y finanzas. Dashboards interactivos con KPIs en tiempo real sobre el
-                                DWH.</div>
-                            <div class="project-impact">🎯 Toma de decisiones más rápida · detección de oportunidades de
-                                negocio · reducción de reportes manuales en un 80%.</div>
+                                    analítico</span></div>
+                            <div class="project-desc"><strong>Problema:</strong> Áreas dependían de reportes manuales en
+                                Excel → versiones inconsistentes, demoras.</div>
+                            <div class="project-impact">📌 <strong>Resultado:</strong> 80% menos reportes manuales ·
+                                dashboards autoservicio · líderes detectan desviaciones en horas, no días.</div>
                         </div>
                     </div>
-
-                    <!-- Proyecto 6: Intranet Azure + GitHub -->
+                    <!-- 4. App biométrica (turnos / horas extras) -->
                     <div class="project-card">
-                        <img class="project-img" src="https://placehold.co/600x400/0f172a/white?text=Intranet+Azure"
-                            alt="Intranet corporativa">
+                        <img class="project-img" src="https://placehold.co/600x400/334155/white?text=Control+Biométrico"
+                            alt="Biométrico RRHH">
                         <div class="project-content">
-                            <div class="project-title">🌐 Intranet corporativa Azure</div>
-                            <div class="project-tech"><span class="tech-badge">Azure App Service</span><span
-                                    class="tech-badge">GitHub Actions</span></div>
-                            <div class="project-desc">Portal interno con despliegue continuo, alta disponibilidad,
-                                centraliza herramientas y comunicación.</div>
-                            <div class="project-impact">📌 100% adopción · reducción de correos internos 60%.</div>
+                            <div class="project-title">👥 Control de asistencia + nómina sin errores</div>
+                            <div class="project-tech"><span class="tech-badge">Visual .NET</span><span
+                                    class="tech-badge">T-SQL</span></div>
+                            <div class="project-desc"><strong>Problema:</strong> gestión de turnos y horas extras con
+                                hojas de cálculo → conflictos salariales y reprocesos.</div>
+                            <div class="project-impact">📌 <strong>Resultado:</strong> 95% menos errores en nómina ·
+                                ahorro de 10h/semana en RRHH · cálculo automático de horas nocturnas y festivas.</div>
                         </div>
                     </div>
-
-                    <!-- Proyecto 7: Catálogo de productos API-first -->
+                    <!-- 5. App comercial consulta compras 18 años -->
                     <div class="project-card">
-                        <img class="project-img" src="https://placehold.co/600x400/1e40af/white?text=API+Productos"
+                        <img class="project-img"
+                            src="https://placehold.co/600x400/0f172a/white?text=Consulta+Comercial+18+años"
+                            alt="App equipo comercial">
+                        <div class="project-content">
+                            <div class="project-title">📱 Equipo comercial: historial en 5 segundos</div>
+                            <div class="project-tech"><span class="tech-badge">Node.js</span><span
+                                    class="tech-badge">SQL</span><span class="tech-badge">API DWH</span></div>
+                            <div class="project-desc"><strong>Problema:</strong> consultar compras históricas de un
+                                cliente tomaba 10 minutos y requería múltiples sistemas.</div>
+                            <div class="project-impact">📌 <strong>Resultado:</strong> reducción de 10 minutos → 5
+                                segundos · 15 agentes comerciales más productivos.</div>
+                        </div>
+                    </div>
+                    <!-- 6. Catálogo de productos (endpoint desde ERP + stock)  (actualizado) -->
+                    <div class="project-card">
+                        <img class="project-img" src="https://placehold.co/600x400/1e40af/white?text=Catálogo+Productos"
                             alt="Catálogo productos">
                         <div class="project-content">
-                            <div class="project-title">📦 Catálogo de productos con endpoint propio</div>
+                            <div class="project-title">📦 Catálogo unificado desde stock del ERP</div>
                             <div class="project-tech"><span class="tech-badge">Node.js</span><span
-                                    class="tech-badge">API REST</span></div>
-                            <div class="project-desc">Endpoint de productos consumido por CRM, equipo comercial y
-                                canales digitales. Interfaz interna de gestión.</div>
-                            <div class="project-impact">🔄 Actualización en tiempo real · reutilización multicanal.
-                            </div>
+                                    class="tech-badge">API REST</span><span class="tech-badge">SQL</span></div>
+                            <div class="project-desc"><strong>Problema:</strong> No existía un catálogo digital
+                                actualizado para cotizar, compartir con clientes o usar en el CRM. Los datos de
+                                productos y stock estaban solo en el ERP, sin acceso ágil.</div>
+                            <div class="project-impact">📌 <strong>Resultado:</strong> Construí un endpoint REST que
+                                expone productos, precios y stock en tiempo real desde el ERP. El catálogo se integró al
+                                portal comercial, CRM y equipos de venta, reduciendo el tiempo de cotización en un 70% y
+                                permitiendo consultas de disponibilidad instantáneas.</div>
+                        </div>
+                    </div>
+                    <!-- 7. Intranet integradora de aplicaciones y beneficios empleados (nuevo) -->
+                    <div class="project-card">
+                        <img class="project-img"
+                            src="https://placehold.co/600x400/0f172a/white?text=Intranet+Integradora"
+                            alt="Intranet empleados">
+                        <div class="project-content">
+                            <div class="project-title">🌐 Intranet integradora: gestión y beneficios</div>
+                            <div class="project-tech"><span class="tech-badge">Azure</span><span
+                                    class="tech-badge">GitHub Actions</span><span class="tech-badge">Node.js</span><span
+                                    class="tech-badge">Power BI</span></div>
+                            <div class="project-desc"><strong>Problema:</strong> La empresa contaba con aplicaciones,
+                                reportes y beneficios dispersos; los empleados perdían tiempo buscando información
+                                clave.</div>
+                            <div class="project-impact">📌 <strong>Resultado:</strong> Centralicé el acceso a directorio
+                                interno, beneficios (salud, bienestar, vacaciones), dashboards, catálogos y links
+                                corporativos. Adopción del 100% del personal, reducción de 60% en correos internos, y
+                                tiempo de consulta de beneficios de 15 minutos a 2 minutos. Portal utilizado diariamente
+                                por más de 60 empleados.</div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
+        <!-- Sección "Socio de negocio" (antes about) -->
         <section id="about">
             <div class="container">
-                <h2 class="section-title">Más que un analista: arquitecto de soluciones</h2>
+                <h2 class="section-title">Socio de negocio, no solo analista</h2>
                 <div class="about-wrap">
                     <div class="about-text">
-                        <p><strong>Ingeniero de Sistemas</strong> con 11 años de experiencia. Implementé 2 ERPs,
-                            integraciones críticas (WhatsApp, Kommo), automatizaciones N8N y un <strong>Data Warehouse
-                                con 18 años de histórico</strong>. Actualmente, como Analista de Datos, potencio esa
-                            base técnica para generar más de <strong>20 reportes personalizados y tableros
-                                ejecutivos</strong> en Power BI y Crystal Reports.</p>
-                        <p>Mi valor diferencial: no solo entrego dashboards, sino que diseño la infraestructura completa
-                            (DWH, APIs, aplicaciones) y la conecto con el negocio. Entiendo tanto de <strong>turnos y
-                                horas extras</strong> como de <strong>agentes IA para atención al cliente</strong>.</p>
+                        <p><strong>Ingeniero de Sistemas con 11 años de experiencia transversal:</strong> ventas, RRHH,
+                            finanzas, inventario, operaciones y gerencia. No entrego diagnósticos: construyo soluciones
+                            completas que conectan Data Warehouse, APIs, automatización con IA, dashboards y
+                            aplicaciones internas.</p>
+                        <p><strong>¿Qué me diferencia de un consultor tradicional?</strong> Hablo el lenguaje del
+                            negocio y también escribo el código. Desde entender por qué un KPI impacta la rentabilidad
+                            hasta implementar el ETL, la API y el tablero que lo mide en tiempo real.</p>
+                        <p><strong>Resultados tangibles:</strong> +30 horas semanales ahorradas, consultas de días a
+                            segundos, 80% menos reportes manuales, errores de nómina reducidos 95%, catálogo de
+                            productos integrado al CRM e intranet con 100% de adopción.</p>
                         <div class="contact-links" id="contacto">
                             <a href="https://github.com/AlexGP-Dev" target="_blank" class="contact-icon"><i
-                                    class="fab fa-github"></i>
-                                GitHub</a>
+                                    class="fab fa-github"></i> GitHub</a>
                             <a href="https://www.linkedin.com/in/alexgp-dev/" target="_blank" class="contact-icon"><i
                                     class="fab fa-linkedin-in"></i> LinkedIn</a>
                             <a href="mailto:alexgarciapal@hotmail.com" class="contact-icon"><i
                                     class="fas fa-envelope"></i> alexgarciapal@hotmail.com</a>
-                            <a href="https://wa.me/573122962792?text=Hola%20Alex,%20vi%20tu%20portafolio%20y%20me%20gustaría%20contactarte"
-                                target="_blank" rel="noopener noreferrer" class="contact-icon"><i
-                                    class="fab fa-whatsapp"></i> +57 312 2962792</a>
+                            <a href="https://wa.me/573122962792?text=Hola%20Alex,%20vi%20tu%20portafolio%20y%20quiero%20explorar%20cómo%20mejorar%20mis%20decisiones%20con%20datos"
+                                target="_blank" class="contact-icon"><i class="fab fa-whatsapp"></i> +57 312 2962792</a>
                         </div>
                     </div>
                 </div>
@@ -691,11 +744,12 @@
 
     <footer>
         <div class="container">
-            <p>© 2026 Alex Garcia — Ingeniero de Sistemas & Analista de Datos. Transformando datos en decisiones.</p>
+            <p>© 2026 Alex Garcia — Conecto procesos, sistemas y datos para transformar información dispersa en
+                decisiones rentables.</p>
         </div>
     </footer>
 
-    <!-- Lightbox HTML (imagen grande) -->
+    <!-- Lightbox -->
     <div id="lightbox" class="lightbox-overlay">
         <span class="lightbox-close">&times;</span>
         <img class="lightbox-img" id="lightbox-img" alt="Vista ampliada">
@@ -714,7 +768,7 @@
             });
         });
 
-        // LIGHTBOX: al hacer clic en cualquier imagen con clase 'project-img'
+        // Lightbox
         document.addEventListener('DOMContentLoaded', function () {
             const images = document.querySelectorAll('.project-img');
             const lightbox = document.getElementById('lightbox');
@@ -724,35 +778,22 @@
             function openLightbox(imgSrc) {
                 lightboxImg.src = imgSrc;
                 lightbox.style.display = 'flex';
-                document.body.style.overflow = 'hidden'; // evitar scroll detrás
+                document.body.style.overflow = 'hidden';
             }
-
-
             function closeLightbox() {
                 lightbox.style.display = 'none';
                 document.body.style.overflow = '';
                 lightboxImg.src = '';
             }
-
             images.forEach(img => {
                 img.addEventListener('click', (e) => {
                     e.stopPropagation();
                     const src = img.getAttribute('src');
-                    if (src) {
-                        openLightbox(src);
-                    }
+                    if (src) openLightbox(src);
                 });
             });
-
-            // Cerrar al hacer clic en el fondo oscuro o en la X
             lightbox.addEventListener('click', closeLightbox);
-            if (closeBtn) {
-                closeBtn.addEventListener('click', (e) => {
-                    e.stopPropagation();
-                    closeLightbox();
-                });
-            }
-            // Evitar que clic en la imagen cierre el lightbox
+            if (closeBtn) closeBtn.addEventListener('click', (e) => { e.stopPropagation(); closeLightbox(); });
             lightboxImg.addEventListener('click', (e) => e.stopPropagation());
         });
     </script>
