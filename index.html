@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
     <meta name="description" content="Alexander García Palacio - Coordinador TI, Ingeniero de Sistemas con 11+ años de experiencia en Transformación Digital, Business Intelligence, Automatización y ERP. Perfil ejecutivo orientado a resultados.">
-    <meta name="keywords" content="Coordinador TI, Transformación Digital, Business Intelligence, Automatización, ERP, Power BI, SQL Server, Líder de Tecnología, CRM Manager, Gerente de Tecnología, HGI, DMS Advance, n8n, Dashboard, Azure Data Factory, Databricks">
+    <meta name="keywords" content="Coordinador TI, Transformación Digital, Business Intelligence, Automatización, ERP, Power BI, SQL Server, Python, Pandas, Líder de Tecnología, CRM Manager, Gerente de Tecnología, HGI, DMS Advance, n8n, Dashboard, Azure Data Factory, Databricks">
     <meta name="author" content="Alexander García Palacio">
     <!-- Open Graph / Social Media -->
     <meta property="og:title" content="Alexander García Palacio | Coordinador TI & Transformación Digital">
@@ -34,7 +34,7 @@
         "addressLocality": "Medellín",
         "addressCountry": "CO"
       },
-      "knowsAbout": ["ERP", "Business Intelligence", "Automatización", "Power BI", "SQL Server", "Data Warehouse", "Transformación Digital", "n8n", "Infraestructura TI", "Liderazgo de Proyectos", "Azure Data Factory", "Databricks", "Azure App Service"],
+      "knowsAbout": ["ERP", "Business Intelligence", "Automatización", "Power BI", "SQL Server", "Data Warehouse", "Transformación Digital", "n8n", "Infraestructura TI", "Liderazgo de Proyectos", "Azure Data Factory", "Databricks", "Azure App Service", "Python", "Pandas"],
       "alumniOf": {
         "@type": "CollegeOrUniversity",
         "name": "Ingeniería de Sistemas"
@@ -50,6 +50,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
+        /* --- ESTILOS (Manteniendo la misma estructura visual y ejecutiva) --- */
         * {
             margin: 0;
             padding: 0;
@@ -70,7 +71,7 @@
             padding: 0 24px;
         }
 
-        /* Header ejecutivo */
+        /* Header */
         header {
             background-color: #ffffff;
             box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
@@ -172,7 +173,7 @@
             transform: translateY(-2px);
         }
 
-        /* Hero ejecutivo */
+        /* Hero */
         .hero {
             padding: 60px 0 48px;
             text-align: center;
@@ -277,7 +278,7 @@
             border-radius: 3px;
         }
 
-        /* Estilos para Experiencia Profesional */
+        /* Experiencia Profesional */
         .exp-card {
             background: white;
             border-radius: 28px;
@@ -337,7 +338,7 @@
             font-size: 1rem;
         }
 
-        /* Tarjetas de proyectos (formato ejecutivo) */
+        /* Proyectos */
         .projects-grid {
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
@@ -419,7 +420,7 @@
             color: #166534;
         }
 
-        /* Tecnologías (categorías visuales) */
+        /* Tecnologías */
         .tech-categories {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -458,7 +459,7 @@
             color: #1e293b;
         }
 
-        /* Estilos para Perfil Ejecutivo */
+        /* Perfil Ejecutivo */
         .executive-summary {
             background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
             border-radius: 28px;
@@ -473,7 +474,7 @@
             font-weight: 400;
         }
 
-        /* About (socio de negocio) */
+        /* About */
         .about-wrap {
             display: flex;
             gap: 40px;
@@ -502,7 +503,7 @@
             background: #e2e8f0;
         }
 
-        /* Reason grid (¿Por qué trabajar conmigo?) */
+        /* Reason grid */
         .reason-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -560,7 +561,7 @@
             cursor: pointer;
         }
 
-        /* ========== MEJORAS PARA MÓVIL ========== */
+        /* Responsive */
         @media (max-width: 768px) {
             .container {
                 padding: 0 20px;
@@ -662,7 +663,7 @@
 </header>
 
 <main>
-    <!-- Hero section -->
+    <!-- Hero -->
     <section id="home" style="padding-top: 32px;">
         <div class="container hero">
             <h1>Alexander García Palacio</h1>
@@ -721,41 +722,41 @@
                 <div class="highlight-card"><div class="highlight-icon"><i class="fas fa-users"></i></div><h3>+50 usuarios soportados y gestionados</h3><p>Mesa de ayuda, infraestructura y formación continua</p></div>
                 <div class="highlight-card"><div class="highlight-icon"><i class="fas fa-robot"></i></div><h3>Automatización CRM + WhatsApp + ERP</h3><p>Reducción significativa de tareas manuales en el área comercial</p></div>
                 <div class="highlight-card"><div class="highlight-icon"><i class="fas fa-chart-line"></i></div><h3>Dashboards gerenciales</h3><p>Visualización de datos para Ventas, RRHH, Inventarios y Producción</p></div>
-                <div class="highlight-card"><div class="highlight-icon"><i class="fas fa-laptop-code"></i></div><h3>6+ aplicaciones corporativas</h3><p>Soluciones a medida: biométrico, catálogo, intranet, APIs, etc.</p></div>
+                <div class="highlight-card"><div class="highlight-icon"><i class="fas fa-laptop-code"></i></div><h3>7+ aplicaciones corporativas</h3><p>Soluciones a medida: biométrico, catálogo, intranet, APIs, etc.</p></div>
             </div>
         </div>
     </section>
 
-    <!-- Proyectos: CASOS DE ÉXITO (incluye DWH mejorado y nuevo proyecto de API) -->
+    <!-- Proyectos: CASOS DE ÉXITO -->
     <section id="proyectos">
         <div class="container">
             <h2 class="section-title">Casos de éxito: soluciones que transforman procesos</h2>
             <div class="projects-grid">
-                <!-- Proyecto 1: Data Warehouse en Azure (mejorado con Data Factory + Databricks) -->
+                <!-- Proyecto 1: Data Warehouse en Azure (con Python/Pandas integrado de forma natural) -->
                 <div class="project-card">
                     <img class="project-img" src="https://placehold.co/600x400/1e40af/white?text=Azure+DWH+Data+Factory+Databricks" alt="Data Warehouse en Azure con Data Factory y Databricks">
                     <div class="project-content">
                         <div class="project-title">☁️ Data Warehouse en Azure con 18 años de datos</div>
                         <div class="project-problem"><strong>Problema:</strong> Datos fragmentados en múltiples ERP y sistemas → reportes históricos tomaban días, sin trazabilidad y sin capacidad de escalar.</div>
-                        <div class="project-solution"><strong>Solución:</strong> Arquitectura de datos en Azure: orquestación ETL con <strong>Azure Data Factory</strong>, transformación avanzada con <strong>Databricks</strong> (PySpark) y modelo dimensional en SQL Server. Ingesta incremental desde múltiples fuentes (ERP, archivos, APIs).</div>
-                        <div class="project-tech"><span class="tech-badge">Azure Data Factory</span><span class="tech-badge">Databricks</span><span class="tech-badge">SQL Server</span><span class="tech-badge">PySpark</span><span class="tech-badge">Power BI</span><span class="tech-badge">n8n</span></div>
-                        <div class="project-impact"><strong>📊 Resultado:</strong> Procesamiento de 18 años de datos en minutos · Escalabilidad en la nube · Reducción de costos de infraestructura · Dashboards con latencia de segundos · Análisis predictivo habilitado.</div>
+                        <div class="project-solution"><strong>Solución:</strong> Arquitectura de datos en Azure: orquestación ETL con <strong>Azure Data Factory</strong>, transformación avanzada con <strong>Databricks</strong> (PySpark) y limpieza/preparación de datos con <strong>Python + Pandas</strong> para la capa de transformación. Modelo dimensional en SQL Server. Ingesta incremental desde múltiples fuentes (ERP, archivos, APIs).</div>
+                        <div class="project-tech"><span class="tech-badge">Azure Data Factory</span><span class="tech-badge">Databricks</span><span class="tech-badge">Python</span><span class="tech-badge">Pandas</span><span class="tech-badge">SQL Server</span><span class="tech-badge">Power BI</span></div>
+                        <div class="project-impact"><strong>📊 Resultado:</strong> Procesamiento de 18 años de datos en minutos · Limpieza y normalización de datos con Pandas · Escalabilidad en la nube · Dashboards con latencia de segundos · Análisis predictivo habilitado.</div>
                     </div>
                 </div>
 
-                <!-- Proyecto 2: API Gateway en Azure App Service (NUEVO) -->
+                <!-- Proyecto 2: API Gateway en Azure App Service -->
                 <div class="project-card">
                     <img class="project-img" src="https://placehold.co/600x400/2563eb/white?text=API+Gateway+Azure+App+Service" alt="API Gateway en Azure App Service">
                     <div class="project-content">
                         <div class="project-title">🔌 API Gateway en Azure App Service</div>
                         <div class="project-problem"><strong>Problema:</strong> Sistemas internos (ERP, CRM, bases de datos) desconectados. Cada integración requería desarrollo ad-hoc, sin punto único de acceso, seguridad inconsistente y tiempos de desarrollo elevados.</div>
                         <div class="project-solution"><strong>Solución:</strong> Desarrollo y despliegue de una <strong>API RESTful</strong> con Node.js + Express en <strong>Azure App Service</strong> con CI/CD desde GitHub. Centraliza el acceso a: SQL Server interno, Data Warehouse (consultas agregadas), ERP vía API, y autenticación con JWT. Documentación con Swagger.</div>
-                        <div class="project-tech"><span class="tech-badge">Node.js</span><span class="tech-badge">Express</span><span class="tech-badge">Azure App Service</span><span class="tech-badge">GitHub Actions</span><span class="tech-badge">JWT</span><span class="tech-badge">Swagger</span><span class="tech-badge">Azure SQL</span></div>
+                        <div class="project-tech"><span class="tech-badge">Node.js</span><span class="tech-badge">Express</span><span class="tech-badge">Azure App Service</span><span class="tech-badge">GitHub Actions</span><span class="tech-badge">JWT</span><span class="tech-badge">Swagger</span></div>
                         <div class="project-impact"><strong>🚀 Impacto:</strong> Reducción del 70% en tiempo de desarrollo de nuevas integraciones · Centralización de lógica de negocio · Seguridad y auditoría unificada · Endpoints consumidos por el portal comercial, CRM, y aplicaciones móviles.</div>
                     </div>
                 </div>
 
-                <!-- Proyecto 3: CRM + IA (automatización comercial) -->
+                <!-- Proyecto 3: CRM + IA -->
                 <div class="project-card">
                     <img class="project-img" src="https://i.ibb.co/Ps6rkphY/IA-para-Kommo.webp" alt="Agente IA Kommo">
                     <div class="project-content">
@@ -779,7 +780,7 @@
                     </div>
                 </div>
 
-                <!-- Proyecto 5: App biométrica (RRHH) -->
+                <!-- Proyecto 5: App biométrica -->
                 <div class="project-card">
                     <img class="project-img" src="https://i.ibb.co/Wv4hY0Df/Biometrico.webp" alt="Biométrico RRHH">
                     <div class="project-content">
@@ -791,7 +792,7 @@
                     </div>
                 </div>
 
-                <!-- Proyecto 6: App comercial consulta rápida -->
+                <!-- Proyecto 6: App comercial -->
                 <div class="project-card">
                     <img class="project-img" src="https://i.ibb.co/VpMXtDRw/Cliente-360.webp" alt="App equipo comercial">
                     <div class="project-content">
@@ -830,7 +831,7 @@
         </div>
     </section>
 
-    <!-- Tecnologías (actualizado con Data Factory, Databricks, App Service) -->
+    <!-- Tecnologías (Python y Pandas integrado de forma natural) -->
     <section id="tecnologias">
         <div class="container">
             <h2 class="section-title">Stack tecnológico</h2>
@@ -839,7 +840,7 @@
                 <div class="tech-cat"><h3><i class="fas fa-chart-pie"></i> ERP</h3><div class="tech-list"><span class="tech-item">HGI</span><span class="tech-item">DMS Advance</span></div></div>
                 <div class="tech-cat"><h3><i class="fas fa-chart-line"></i> Business Intelligence</h3><div class="tech-list"><span class="tech-item">Power BI</span><span class="tech-item">Metabase</span><span class="tech-item">Data Warehouse</span><span class="tech-item">Crystal Reports</span></div></div>
                 <div class="tech-cat"><h3><i class="fas fa-database"></i> Bases de Datos</h3><div class="tech-list"><span class="tech-item">SQL Server</span><span class="tech-item">MySQL</span><span class="tech-item">T-SQL</span></div></div>
-                <div class="tech-cat"><h3><i class="fas fa-code"></i> Desarrollo</h3><div class="tech-list"><span class="tech-item">Angular</span><span class="tech-item">Node.js</span><span class="tech-item">JavaScript</span><span class="tech-item">APIs REST</span><span class="tech-item">Visual .NET</span><span class="tech-item">PySpark</span></div></div>
+                <div class="tech-cat"><h3><i class="fas fa-code"></i> Desarrollo y Análisis de Datos</h3><div class="tech-list"><span class="tech-item">Python</span><span class="tech-item">Pandas</span><span class="tech-item">Node.js</span><span class="tech-item">Angular</span><span class="tech-item">JavaScript</span><span class="tech-item">Visual .NET</span><span class="tech-item">PySpark</span></div></div>
                 <div class="tech-cat"><h3><i class="fas fa-server"></i> Infraestructura</h3><div class="tech-list"><span class="tech-item">Windows Server</span><span class="tech-item">Linux</span><span class="tech-item">Active Directory</span><span class="tech-item">Firewall</span></div></div>
                 <div class="tech-cat"><h3><i class="fas fa-magic"></i> Automatización</h3><div class="tech-list"><span class="tech-item">n8n</span><span class="tech-item">WhatsApp Business API</span><span class="tech-item">Agentes IA (OpenAI)</span><span class="tech-item">Integraciones API</span></div></div>
             </div>
@@ -863,14 +864,14 @@
         </div>
     </section>
 
-    <!-- Sección "Socio de negocio" -->
+    <!-- About: Socio de negocio -->
     <section id="about">
         <div class="container">
             <h2 class="section-title">Socio de negocio, no solo analista</h2>
             <div class="about-wrap">
                 <div class="about-text">
                     <p><strong>Ingeniero de Sistemas con 11 años de experiencia transversal:</strong> ventas, RRHH, finanzas, inventario, operaciones, producción, mercadeo y gerencia. Diseño e implemento soluciones que integran procesos, datos y tecnología para generar valor empresarial. Construyo soluciones completas que conectan Data Warehouse en Azure, APIs, automatización con IA, dashboards y aplicaciones internas.</p>
-                    <p><strong>¿Qué me diferencia?</strong> Combino visión de negocio y capacidad técnica para diseñar e implementar soluciones tecnológicas de extremo a extremo. Desde la identificación de un KPI crítico hasta la implementación de la orquestación en Data Factory, transformación en Databricks y la API que lo consume en tiempo real.</p>
+                    <p><strong>¿Qué me diferencia?</strong> Combino visión de negocio y capacidad técnica para diseñar e implementar soluciones tecnológicas de extremo a extremo. Desde la identificación de un KPI crítico hasta la implementación de la orquestación en Data Factory, transformación en Databricks con procesamiento en Python/Pandas y la API que lo consume en tiempo real.</p>
                     <p><strong>Resultados tangibles:</strong> Optimización de tiempos de consulta (de días a segundos), reducción significativa de reportes manuales, mejora en la precisión de procesos de nómina, catálogo de productos integrado al CRM, API Gateway centralizada e intranet corporativa con alta adopción.</p>
                     <div class="contact-links" id="contacto">
                         <a href="https://github.com/AlexGP-Dev" target="_blank" class="contact-icon"><i class="fab fa-github"></i> GitHub</a>
