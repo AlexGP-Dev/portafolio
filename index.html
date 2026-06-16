@@ -1,18 +1,14 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-    <meta name="description"
-        content="Alexander García Palacio - Coordinador TI, Ingeniero de Sistemas con 11+ años de experiencia en Transformación Digital, Business Intelligence, Automatización y ERP. Perfil ejecutivo orientado a resultados.">
-    <meta name="keywords"
-        content="Coordinador TI, Transformación Digital, Business Intelligence, Automatización, ERP, Power BI, SQL Server, Líder de Tecnología, CRM Manager, Gerente de Tecnología, HGI, DMS Advance, n8n, Dashboard">
+    <meta name="description" content="Alexander García Palacio - Coordinador TI, Ingeniero de Sistemas con 11+ años de experiencia en Transformación Digital, Business Intelligence, Automatización y ERP. Perfil ejecutivo orientado a resultados.">
+    <meta name="keywords" content="Coordinador TI, Transformación Digital, Business Intelligence, Automatización, ERP, Power BI, SQL Server, Líder de Tecnología, CRM Manager, Gerente de Tecnología, HGI, DMS Advance, n8n, Dashboard, Azure Data Factory, Databricks">
     <meta name="author" content="Alexander García Palacio">
     <!-- Open Graph / Social Media -->
     <meta property="og:title" content="Alexander García Palacio | Coordinador TI & Transformación Digital">
-    <meta property="og:description"
-        content="Ingeniero de Sistemas con más de 11 años de experiencia liderando iniciativas de infraestructura, ERP, BI y automatización. Descubre mi portafolio profesional.">
+    <meta property="og:description" content="Ingeniero de Sistemas con más de 11 años de experiencia liderando iniciativas de infraestructura, ERP, BI y automatización. Descubre mi portafolio profesional.">
     <meta property="og:type" content="profile">
     <meta property="og:url" content="https://alexgp-dev.github.io/portafolio/">
     <meta property="og:image" content="https://placehold.co/1200x630/1e40af/white?text=Alexander+García">
@@ -25,7 +21,7 @@
       "@type": "Person",
       "name": "Alexander García Palacio",
       "alternateName": "Alex García",
-      "jobTitle": ["Coordinador TI", "Business Intelligence Manager"],
+      "jobTitle": ["Coordinador TI", "Business Intelligence Manager", "Arquitecto de Datos"],
       "worksFor": {
         "@type": "Organization",
         "name": "Joyería Inter"
@@ -38,7 +34,7 @@
         "addressLocality": "Medellín",
         "addressCountry": "CO"
       },
-      "knowsAbout": ["ERP", "Business Intelligence", "Automatización", "Power BI", "SQL Server", "Data Warehouse", "Transformación Digital", "n8n", "Infraestructura TI", "Liderazgo de Proyectos"],
+      "knowsAbout": ["ERP", "Business Intelligence", "Automatización", "Power BI", "SQL Server", "Data Warehouse", "Transformación Digital", "n8n", "Infraestructura TI", "Liderazgo de Proyectos", "Azure Data Factory", "Databricks", "Azure App Service"],
       "alumniOf": {
         "@type": "CollegeOrUniversity",
         "name": "Ingeniería de Sistemas"
@@ -51,8 +47,7 @@
     </script>
     <title>Alexander García | Coordinador TI & Transformación Digital</title>
     <!-- Google Fonts & Font Awesome -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;400;500;600;700;800&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
         * {
@@ -145,39 +140,33 @@
             border: none;
             cursor: pointer;
             font-size: 0.9rem;
-            box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+            box-shadow: 0 1px 2px rgba(0,0,0,0.05);
         }
-
         .btn-primary {
             background-color: #2563eb;
         }
-
         .btn-primary:hover {
             background-color: #1e40af;
             transform: translateY(-2px);
-            box-shadow: 0 8px 20px rgba(37, 99, 235, 0.25);
+            box-shadow: 0 8px 20px rgba(37,99,235,0.25);
         }
-
         .btn-outline {
             background: transparent;
             border: 1.5px solid #2563eb;
             color: #2563eb;
             box-shadow: none;
         }
-
         .btn-outline:hover {
             background: #2563eb;
             color: white;
             transform: translateY(-2px);
         }
-
         .btn-light {
             background: white;
             color: #1e293b;
             border: 1px solid #cbd5e1;
             box-shadow: none;
         }
-
         .btn-light:hover {
             background: #f1f5f9;
             transform: translateY(-2px);
@@ -188,7 +177,6 @@
             padding: 60px 0 48px;
             text-align: center;
         }
-
         .hero h1 {
             font-size: 2.6rem;
             font-weight: 800;
@@ -199,7 +187,6 @@
             margin-bottom: 8px;
             letter-spacing: -0.02em;
         }
-
         .hero-profession {
             font-size: 1rem;
             font-weight: 500;
@@ -207,7 +194,6 @@
             margin-bottom: 16px;
             letter-spacing: -0.2px;
         }
-
         .hero-title {
             font-size: 1.3rem;
             font-weight: 600;
@@ -215,7 +201,6 @@
             margin-bottom: 16px;
             letter-spacing: -0.2px;
         }
-
         .hero-sub {
             font-size: 1.05rem;
             color: #334155;
@@ -223,7 +208,6 @@
             margin: 0 auto 28px;
             line-height: 1.5;
         }
-
         .hero-buttons {
             display: flex;
             gap: 16px;
@@ -239,36 +223,31 @@
             gap: 24px;
             margin: 40px 0 20px;
         }
-
         .highlight-card {
             background: white;
             border-radius: 24px;
             padding: 24px 20px;
             text-align: center;
-            box-shadow: 0 6px 14px rgba(0, 0, 0, 0.02);
+            box-shadow: 0 6px 14px rgba(0,0,0,0.02);
             border: 1px solid #eef2ff;
             transition: all 0.2s;
         }
-
         .highlight-card:hover {
             transform: translateY(-4px);
-            box-shadow: 0 20px 25px -12px rgba(0, 0, 0, 0.08);
+            box-shadow: 0 20px 25px -12px rgba(0,0,0,0.08);
             border-color: #d9e6ff;
         }
-
         .highlight-icon {
             font-size: 2rem;
             color: #2563eb;
             margin-bottom: 12px;
         }
-
         .highlight-card h3 {
             font-size: 1rem;
             font-weight: 700;
             color: #0f172a;
             margin-bottom: 8px;
         }
-
         .highlight-card p {
             font-size: 0.9rem;
             color: #475569;
@@ -279,7 +258,6 @@
             padding: 64px 0;
             border-bottom: 1px solid #e9eef3;
         }
-
         .section-title {
             font-size: 1.9rem;
             font-weight: 700;
@@ -288,7 +266,6 @@
             display: inline-block;
             letter-spacing: -0.3px;
         }
-
         .section-title:after {
             content: '';
             position: absolute;
@@ -305,11 +282,10 @@
             background: white;
             border-radius: 28px;
             padding: 32px;
-            box-shadow: 0 12px 24px -12px rgba(0, 0, 0, 0.08);
+            box-shadow: 0 12px 24px -12px rgba(0,0,0,0.08);
             border: 1px solid #eef2ff;
             margin-bottom: 32px;
         }
-
         .exp-header {
             display: flex;
             justify-content: space-between;
@@ -319,13 +295,11 @@
             border-bottom: 2px solid #eef2ff;
             padding-bottom: 16px;
         }
-
         .exp-company {
             font-size: 1.6rem;
             font-weight: 700;
             color: #0f172a;
         }
-
         .exp-period {
             font-weight: 500;
             color: #2563eb;
@@ -334,21 +308,18 @@
             border-radius: 40px;
             font-size: 0.8rem;
         }
-
         .exp-role {
             font-size: 1.2rem;
             font-weight: 600;
             color: #334155;
             margin-bottom: 20px;
         }
-
         .exp-responsibilities {
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
             gap: 16px;
             list-style: none;
         }
-
         .exp-responsibilities li {
             display: flex;
             align-items: center;
@@ -360,7 +331,6 @@
             border-radius: 60px;
             border: 1px solid #eef2ff;
         }
-
         .exp-responsibilities li i {
             color: #2563eb;
             width: 20px;
@@ -373,24 +343,21 @@
             grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
             gap: 32px;
         }
-
         .project-card {
             background: white;
             border-radius: 28px;
             overflow: hidden;
-            box-shadow: 0 12px 24px -12px rgba(0, 0, 0, 0.08);
+            box-shadow: 0 12px 24px -12px rgba(0,0,0,0.08);
             transition: all 0.3s ease;
             border: 1px solid #edf2f7;
             display: flex;
             flex-direction: column;
             height: 100%;
         }
-
         .project-card:hover {
             transform: translateY(-6px);
-            box-shadow: 0 25px 35px -12px rgba(0, 0, 0, 0.15);
+            box-shadow: 0 25px 35px -12px rgba(0,0,0,0.15);
         }
-
         .project-img {
             width: 100%;
             height: 200px;
@@ -399,23 +366,19 @@
             cursor: pointer;
             transition: transform 0.3s, filter 0.2s;
         }
-
         .project-img:hover {
             filter: brightness(0.96);
         }
-
         .project-content {
             padding: 24px 24px 20px;
             flex: 1;
         }
-
         .project-title {
             font-size: 1.35rem;
             font-weight: 700;
             margin-bottom: 12px;
             color: #0f172a;
         }
-
         .project-problem {
             background: #fff5e6;
             padding: 10px 14px;
@@ -426,20 +389,17 @@
             font-weight: 500;
             border-left: 3px solid #f97316;
         }
-
         .project-solution {
             margin: 12px 0;
             font-size: 0.9rem;
             color: #1e293b;
         }
-
         .project-tech {
             display: flex;
             flex-wrap: wrap;
             gap: 8px;
             margin: 14px 0 12px;
         }
-
         .tech-badge {
             background: #e6f0ff;
             color: #1e40af;
@@ -448,7 +408,6 @@
             font-size: 0.7rem;
             font-weight: 600;
         }
-
         .project-impact {
             background: #f0fdf4;
             padding: 12px 16px;
@@ -467,15 +426,13 @@
             gap: 28px;
             margin-top: 20px;
         }
-
         .tech-cat {
             background: white;
             border-radius: 24px;
             padding: 24px;
             border: 1px solid #eef2ff;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.02);
+            box-shadow: 0 4px 10px rgba(0,0,0,0.02);
         }
-
         .tech-cat h3 {
             font-size: 1.3rem;
             margin-bottom: 20px;
@@ -484,17 +441,14 @@
             gap: 10px;
             color: #0f172a;
         }
-
         .tech-cat h3 i {
             color: #2563eb;
         }
-
         .tech-list {
             display: flex;
             flex-wrap: wrap;
             gap: 12px;
         }
-
         .tech-item {
             background: #f1f5f9;
             padding: 6px 16px;
@@ -512,7 +466,6 @@
             color: #f8fafc;
             margin-bottom: 40px;
         }
-
         .executive-summary p {
             font-size: 1rem;
             line-height: 1.6;
@@ -527,14 +480,12 @@
             flex-wrap: wrap;
             align-items: center;
         }
-
         .contact-links {
             margin-top: 28px;
             display: flex;
             gap: 16px;
             flex-wrap: wrap;
         }
-
         .contact-icon {
             display: inline-flex;
             align-items: center;
@@ -547,9 +498,29 @@
             font-weight: 500;
             transition: background 0.2s;
         }
-
         .contact-icon:hover {
             background: #e2e8f0;
+        }
+
+        /* Reason grid (¿Por qué trabajar conmigo?) */
+        .reason-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 24px;
+            margin-top: 24px;
+        }
+        .reason-item {
+            background: white;
+            padding: 20px;
+            border-radius: 24px;
+            text-align: center;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.02);
+            border: 1px solid #edf2f7;
+        }
+        .reason-item i {
+            font-size: 2rem;
+            color: #2563eb;
+            margin-bottom: 12px;
         }
 
         footer {
@@ -567,21 +538,19 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background: rgba(0, 0, 0, 0.9);
+            background: rgba(0,0,0,0.9);
             display: none;
             justify-content: center;
             align-items: center;
             z-index: 1000;
             cursor: pointer;
         }
-
         .lightbox-img {
             max-width: 90%;
             max-height: 90%;
             object-fit: contain;
             border-radius: 12px;
         }
-
         .lightbox-close {
             position: absolute;
             top: 20px;
@@ -591,68 +560,53 @@
             cursor: pointer;
         }
 
-        /* ========== MEJORAS PARA MÓVIL (márgenes, botones y espaciado) ========== */
+        /* ========== MEJORAS PARA MÓVIL ========== */
         @media (max-width: 768px) {
             .container {
                 padding: 0 20px;
-                /* Aumentamos el margen lateral en móvil para evitar bordes pegados */
             }
-
             .hero {
                 padding: 40px 0 32px;
-                /* Más espacio vertical en móvil */
             }
-
             .hero h1 {
                 font-size: 1.9rem;
                 line-height: 1.2;
             }
-
             .hero-title {
                 font-size: 1.1rem;
             }
-
             .hero-sub {
                 font-size: 0.95rem;
                 margin-bottom: 24px;
             }
-
             .hero-buttons {
                 flex-direction: column;
-                /* En móviles muy pequeños los botones se apilan */
                 align-items: center;
                 gap: 12px;
                 width: 100%;
             }
-
             .hero-buttons .btn {
                 width: 100%;
                 max-width: 280px;
                 text-align: center;
                 margin: 0 auto;
             }
-
             .section-title {
                 font-size: 1.6rem;
             }
-
             .projects-grid {
                 grid-template-columns: 1fr;
             }
-
             .exp-header {
                 flex-direction: column;
                 gap: 8px;
             }
-
             .exp-company {
                 font-size: 1.3rem;
             }
-
             .executive-summary {
                 padding: 24px;
             }
-
             .nav-links {
                 display: none;
                 flex-direction: column;
@@ -661,34 +615,27 @@
                 padding: 16px 0;
                 gap: 16px;
             }
-
             .nav-links.show {
                 display: flex;
             }
-
             .menu-toggle {
                 display: block;
             }
         }
 
-        /* Ajuste adicional para pantallas muy pequeñas (menos de 480px) */
         @media (max-width: 480px) {
             .hero {
-                padding: 32px 15px 24px;
+                padding: 32px 0 24px;
             }
-
             .hero h1 {
                 font-size: 1.7rem;
             }
-
             .hero-profession {
                 font-size: 0.9rem;
             }
-
             .hero-title {
                 font-size: 1rem;
             }
-
             .btn {
                 padding: 8px 20px;
                 font-size: 0.85rem;
@@ -696,411 +643,282 @@
         }
     </style>
 </head>
-
 <body>
-    <header>
+<header>
+    <div class="container">
+        <div class="nav-bar">
+            <div class="logo">Alexander García</div>
+            <button class="menu-toggle" id="mobileMenuBtn"><i class="fas fa-bars"></i></button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home">Inicio</a></li>
+                <li><a href="#experiencia">Experiencia</a></li>
+                <li><a href="#resultados">Resultados</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="#tecnologias">Tecnologías</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </div>
+    </div>
+</header>
+
+<main>
+    <!-- Hero section -->
+    <section id="home" style="padding-top: 32px;">
+        <div class="container hero">
+            <h1>Alexander García Palacio</h1>
+            <div class="hero-profession">Ingeniero de Sistemas | 11+ años de experiencia | Medellín, Colombia</div>
+            <div class="hero-title">Coordinador TI | Transformación Digital | Business Intelligence | Automatización</div>
+            <p class="hero-sub">Más de 11 años impulsando eficiencia operativa mediante ERP, Business Intelligence, automatización y desarrollo de soluciones tecnológicas. Conecto procesos, datos y equipos para generar decisiones rentables.</p>
+            <div class="hero-buttons">
+                <a href="#proyectos" class="btn btn-primary">Ver Proyectos <i class="fas fa-arrow-right"></i></a>
+                <a href="https://drive.google.com/uc?export=download&id=1LI1bMTQhCwRM9HtVfDbXBjnGcIDqsfXS" class="btn btn-outline" id="downloadCVBtn" download>Descargar Hoja de Vida <i class="fas fa-download"></i></a>
+                <a href="#contacto" class="btn btn-light">Contactar <i class="fas fa-envelope"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Perfil Ejecutivo -->
+    <section style="padding: 40px 0 0;">
         <div class="container">
-            <div class="nav-bar">
-                <div class="logo">Alexander García</div>
-                <button class="menu-toggle" id="mobileMenuBtn"><i class="fas fa-bars"></i></button>
-                <ul class="nav-links" id="navLinks">
-                    <li><a href="#home">Inicio</a></li>
-                    <li><a href="#experiencia">Experiencia</a></li>
-                    <li><a href="#resultados">Resultados</a></li>
-                    <li><a href="#proyectos">Proyectos</a></li>
-                    <li><a href="#tecnologias">Tecnologías</a></li>
-                    <li><a href="#contacto">Contacto</a></li>
+            <div class="executive-summary">
+                <p><strong>Perfil Ejecutivo:</strong> Profesional con más de 11 años de experiencia en el sector empresarial, especializado en la implementación y gestión de soluciones tecnológicas integrales. Experto en la administración de los ERP HGI y DMS Advance, el diseño de dashboards de Business Intelligence (Power BI, Metabase) y la automatización de procesos mediante APIs e inteligencia artificial. Con una visión 360° de la operación, conecto la infraestructura, los sistemas y los datos con los objetivos estratégicos del negocio para impulsar la transformación digital y la eficiencia operativa.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experiencia Profesional -->
+    <section id="experiencia">
+        <div class="container">
+            <h2 class="section-title">Experiencia Profesional</h2>
+            <div class="exp-card">
+                <div class="exp-header">
+                    <div class="exp-company">Joyería Inter</div>
+                    <div class="exp-period">2014 – Actual</div>
+                </div>
+                <div class="exp-role">Coordinador TI & Desarrollador Full Stack</div>
+                <ul class="exp-responsibilities">
+                    <li><i class="fas fa-chalkboard-user"></i> Liderazgo tecnológico organizacional</li>
+                    <li><i class="fas fa-cubes"></i> Administración de ERP HGI y DMS Advance</li>
+                    <li><i class="fas fa-cloud"></i> Arquitectura de datos en Azure (Data Factory, Databricks)</li>
+                    <li><i class="fas fa-chart-line"></i> Business Intelligence y analítica</li>
+                    <li><i class="fas fa-robot"></i> Automatización de procesos empresariales</li>
+                    <li><i class="fas fa-server"></i> Infraestructura tecnológica</li>
+                    <li><i class="fas fa-handshake"></i> Gestión de proveedores</li>
+                    <li><i class="fas fa-laptop-code"></i> Desarrollo de aplicaciones corporativas</li>
+                    <li><i class="fas fa-headset"></i> Soporte a usuarios y continuidad operativa</li>
                 </ul>
             </div>
         </div>
-    </header>
+    </section>
 
-    <main>
-        <!-- Hero section con márgenes mejorados en móvil -->
-        <section id="home" style="padding-top: 32px;">
-            <div class="container hero">
-                <h1>Alexander García Palacio</h1>
-                <div class="hero-profession">Ingeniero de Sistemas | 11+ años de experiencia | Medellín, Colombia</div>
-                <div class="hero-title">Coordinador TI | Transformación Digital | Business Intelligence | Automatización
-                </div>
-                <p class="hero-sub">Más de 11 años impulsando eficiencia operativa mediante ERP, Business Intelligence,
-                    automatización y desarrollo de soluciones tecnológicas. Conecto procesos, datos y equipos para
-                    generar decisiones rentables.</p>
-                <div class="hero-buttons">
-                    <a href="#proyectos" class="btn btn-primary">Ver Proyectos <i class="fas fa-arrow-right"></i></a>
-                    <a href="https://drive.google.com/uc?export=download&id=1LI1bMTQhCwRM9HtVfDbXBjnGcIDqsfXS"
-                        class="btn btn-outline" id="downloadCVBtn" download>Descargar Hoja de Vida <i
-                            class="fas fa-download"></i></a>
-                    <a href="#contacto" class="btn btn-light">Contactar <i class="fas fa-envelope"></i></a>
-                </div>
-            </div>
-        </section>
-
-        <!-- Nueva sección: Perfil Ejecutivo (para reclutadores) -->
-        <section style="padding: 40px 0 0;">
-            <div class="container">
-                <div class="executive-summary">
-                    <p><strong>Perfil Ejecutivo:</strong> Profesional con más de 11 años de experiencia en el sector
-                        empresarial, especializado en la implementación y gestión de soluciones tecnológicas integrales.
-                        Experto en la administración de los ERP HGI y DMS Advance, el diseño de dashboards de Business
-                        Intelligence (Power BI, Metabase) y la automatización de procesos mediante APIs e inteligencia
-                        artificial. Con una visión 360° de la operación, conecto la infraestructura, los sistemas y los
-                        datos con los objetivos estratégicos del negocio para impulsar la transformación digital y la
-                        eficiencia operativa.</p>
-                </div>
-            </div>
-        </section>
-
-        <!-- Sección Experiencia Profesional (nueva) -->
-        <section id="experiencia">
-            <div class="container">
-                <h2 class="section-title">Experiencia Profesional</h2>
-                <div class="exp-card">
-                    <div class="exp-header">
-                        <div class="exp-company">Joyería Inter</div>
-                        <div class="exp-period">2014 – Actual</div>
-                    </div>
-                    <div class="exp-role">Coordinador TI & Desarrollador Full Stack</div>
-                    <ul class="exp-responsibilities">
-                        <li><i class="fas fa-chalkboard-user"></i> Liderazgo tecnológico organizacional</li>
-                        <li><i class="fas fa-cubes"></i> Administración de ERP HGI y DMS Advance</li>
-                        <li><i class="fas fa-chart-line"></i> Business Intelligence y analítica</li>
-                        <li><i class="fas fa-robot"></i> Automatización de procesos empresariales</li>
-                        <li><i class="fas fa-server"></i> Infraestructura tecnológica</li>
-                        <li><i class="fas fa-handshake"></i> Gestión de proveedores</li>
-                        <li><i class="fas fa-laptop-code"></i> Desarrollo de aplicaciones corporativas</li>
-                        <li><i class="fas fa-headset"></i> Soporte a usuarios y continuidad operativa</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-
-        <!-- Sección Resultados Destacados (métricas optimizadas) -->
-        <section id="resultados">
-            <div class="container">
-                <h2 class="section-title">Resultados que respaldan mi gestión</h2>
-                <div class="highlight-grid">
-                    <div class="highlight-card">
-                        <div class="highlight-icon"><i class="fas fa-building"></i></div>
-                        <h3>2 ERP corporativos implementados</h3>
-                        <p>HGI y DMS Advance, integración y parametrización total</p>
-                    </div>
-                    <div class="highlight-card">
-                        <div class="highlight-icon"><i class="fas fa-database"></i></div>
-                        <h3>Data Warehouse con 18+ años consolidados</h3>
-                        <p>Optimización de tiempos de consulta para análisis histórico</p>
-                    </div>
-                    <div class="highlight-card">
-                        <div class="highlight-icon"><i class="fas fa-users"></i></div>
-                        <h3>+50 usuarios soportados y gestionados</h3>
-                        <p>Mesa de ayuda, infraestructura y formación continua</p>
-                    </div>
-                    <div class="highlight-card">
-                        <div class="highlight-icon"><i class="fas fa-robot"></i></div>
-                        <h3>Automatización CRM + WhatsApp + ERP</h3>
-                        <p>Reducción significativa de tareas manuales en el área comercial</p>
-                    </div>
-                    <div class="highlight-card">
-                        <div class="highlight-icon"><i class="fas fa-chart-line"></i></div>
-                        <h3>Dashboards gerenciales</h3>
-                        <p>Visualización de datos para Ventas, RRHH, Inventarios y Producción</p>
-                    </div>
-                    <div class="highlight-card">
-                        <div class="highlight-icon"><i class="fas fa-laptop-code"></i></div>
-                        <h3>6+ aplicaciones corporativas</h3>
-                        <p>Soluciones a medida: biométrico, catálogo, intranet, etc.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Proyectos reorganizados por impacto empresarial -->
-        <section id="proyectos">
-            <div class="container">
-                <h2 class="section-title">Casos de éxito: soluciones que transforman procesos</h2>
-                <div class="projects-grid">
-                    <!-- Proyecto 1: Data Warehouse 18 años -->
-                    <div class="project-card">
-                        <img class="project-img"
-                            src="https://placehold.co/600x400/1e40af/white?text=Data+Warehouse+18+a%C3%B1os"
-                            alt="DWH histórico">
-                        <div class="project-content">
-                            <div class="project-title">🏭 Centralización de 18 años de operación</div>
-                            <div class="project-problem"><strong>Problema:</strong> Datos fragmentados en múltiples ERP
-                                → reportes históricos tomaban días, sin trazabilidad.</div>
-                            <div class="project-solution"><strong>Solución:</strong> Implementación de Data Warehouse en
-                                modelo estrella, ETL automatizado con n8n y Azure.</div>
-                            <div class="project-tech"><span class="tech-badge">SQL Server</span><span
-                                    class="tech-badge">Azure</span><span class="tech-badge">ETL</span><span
-                                    class="tech-badge">n8n</span></div>
-                            <div class="project-impact"><strong>📊 Resultado:</strong> Optimización de consultas (de
-                                días a segundos) · Reducción significativa de costos operativos asociados a reportes
-                                manuales.</div>
-                        </div>
-                    </div>
-                    <!-- Proyecto 2: CRM + IA (automatización comercial) -->
-                    <div class="project-card">
-                        <img class="project-img" src="https://i.ibb.co/Ps6rkphY/IA-para-Kommo.webp"
-                            alt="Agente IA Kommo">
-                        <div class="project-content">
-                            <div class="project-title">🤝 CRM + IA: datos de clientes en tiempo real</div>
-                            <div class="project-problem"><strong>Problema:</strong> Equipo comercial con información
-                                incompleta y desactualizada → pérdida de oportunidades.</div>
-                            <div class="project-solution"><strong>Solución:</strong> Integración n8n + Kommo + OpenAI +
-                                WhatsApp API, agente IA 24/7.</div>
-                            <div class="project-tech"><span class="tech-badge">n8n</span><span
-                                    class="tech-badge">Kommo</span><span class="tech-badge">OpenAI</span><span
-                                    class="tech-badge">API REST</span></div>
-                            <div class="project-impact"><strong>📈 Impacto:</strong> Disminución del 70% en búsquedas
-                                manuales de información · Agente IA resolviendo consultas frecuentes de forma autónoma.
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Proyecto 3: Tableros Power BI -->
-                    <div class="project-card">
-                        <img class="project-img"
-                            src="https://placehold.co/600x400/2563eb/white?text=Power+BI+Dashboards"
-                            alt="Dashboards ERP">
-                        <div class="project-content">
-                            <div class="project-title">📊 Autonomía analítica para cada área</div>
-                            <div class="project-problem"><strong>Problema:</strong> Áreas dependían de reportes manuales
-                                en Excel → versiones inconsistentes, demoras.</div>
-                            <div class="project-solution"><strong>Solución:</strong> Dashboards en Power BI conectados
-                                al DWH + Crystal Reports para formatos específicos.</div>
-                            <div class="project-tech"><span class="tech-badge">Power BI</span><span
-                                    class="tech-badge">Crystal Reports</span><span class="tech-badge">SQL
-                                    analítico</span></div>
-                            <div class="project-impact"><strong>⚡ Resultado:</strong> Reducción del 80% en reportes
-                                manuales · Información disponible en tiempo real para la toma de decisiones.</div>
-                        </div>
-                    </div>
-                    <!-- Proyecto 4: App biométrica (RRHH) -->
-                    <div class="project-card">
-                        <img class="project-img" src="https://i.ibb.co/Wv4hY0Df/Biometrico.webp" alt="Biométrico RRHH">
-                        <div class="project-content">
-                            <div class="project-title">👥 Control de asistencia + nómina sin errores</div>
-                            <div class="project-problem"><strong>Problema:</strong> Gestión de turnos y horas extras con
-                                hojas de cálculo → conflictos salariales.</div>
-                            <div class="project-solution"><strong>Solución:</strong> Desarrollo de aplicación en Visual
-                                .NET con T-SQL, cálculo automático de horas nocturnas/festivas.</div>
-                            <div class="project-tech"><span class="tech-badge">Visual .NET</span><span
-                                    class="tech-badge">T-SQL</span></div>
-                            <div class="project-impact"><strong>✅ Impacto:</strong> Disminución del 95% en errores de
-                                liquidación de nómina · Ahorro significativo de horas hombre en el área de RRHH.</div>
-                        </div>
-                    </div>
-                    <!-- Proyecto 5: App comercial consulta rápida -->
-                    <div class="project-card">
-                        <img class="project-img" src="https://i.ibb.co/VpMXtDRw/Cliente-360.webp"
-                            alt="App equipo comercial">
-                        <div class="project-content">
-                            <div class="project-title">📱 Equipo comercial: historial en 5 segundos</div>
-                            <div class="project-problem"><strong>Problema:</strong> Consultar compras históricas tomaba
-                                10 minutos y múltiples sistemas.</div>
-                            <div class="project-solution"><strong>Solución:</strong> API Node.js consumiendo DWH,
-                                interfaz simple para agentes.</div>
-                            <div class="project-tech"><span class="tech-badge">Node.js</span><span
-                                    class="tech-badge">SQL</span><span class="tech-badge">API DWH</span></div>
-                            <div class="project-impact"><strong>⏱️ Resultado:</strong> Mejora en la eficiencia del
-                                equipo comercial, reduciendo drásticamente los tiempos de respuesta a clientes.</div>
-                        </div>
-                    </div>
-                    <!-- Proyecto 6: Catálogo unificado -->
-                    <div class="project-card">
-                        <img class="project-img" src="https://i.ibb.co/My6c7MyB/Catalogo-Productos.webp"
-                            alt="Catálogo productos">
-                        <div class="project-content">
-                            <div class="project-title">📦 Catálogo unificado desde stock del ERP</div>
-                            <div class="project-problem"><strong>Problema:</strong> No existía catálogo digital
-                                actualizado para cotizar o usar en CRM.</div>
-                            <div class="project-solution"><strong>Solución:</strong> Endpoint REST que expone productos,
-                                precios y stock en tiempo real desde el ERP.</div>
-                            <div class="project-tech"><span class="tech-badge">Node.js</span><span
-                                    class="tech-badge">API REST</span><span class="tech-badge">SQL</span></div>
-                            <div class="project-impact"><strong>📉 Resultado:</strong> Reducción del tiempo de
-                                cotización · Información de disponibilidad en tiempo real para clientes y asesores.
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Proyecto 7: Intranet integradora -->
-                    <div class="project-card">
-                        <img class="project-img" src="https://i.ibb.co/0V8VYtBf/Portal-inter.webp"
-                            alt="Intranet empleados">
-                        <div class="project-content">
-                            <div class="project-title">🌐 Intranet integradora: gestión y beneficios</div>
-                            <div class="project-problem"><strong>Problema:</strong> Aplicaciones, reportes y beneficios
-                                dispersos; empleados perdían tiempo.</div>
-                            <div class="project-solution"><strong>Solución:</strong> Portal central en Azure con GitHub
-                                Actions, integración de directorio, beneficios, dashboards.</div>
-                            <div class="project-tech"><span class="tech-badge">Azure</span><span
-                                    class="tech-badge">GitHub Actions</span><span class="tech-badge">Node.js</span>
-                            </div>
-                            <div class="project-impact"><strong>🏢 Impacto:</strong> Optimización en la comunicación
-                                interna y acceso a la información, reduciendo consultas internas y mejorando la
-                                experiencia del empleado.</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Sección: Tecnologías -->
-        <section id="tecnologias">
-            <div class="container">
-                <h2 class="section-title">Stack tecnológico</h2>
-                <div class="tech-categories">
-                    <div class="tech-cat">
-                        <h3><i class="fas fa-chart-pie"></i> ERP</h3>
-                        <div class="tech-list"><span class="tech-item">HGI</span><span class="tech-item">DMS
-                                Advance</span></div>
-                    </div>
-                    <div class="tech-cat">
-                        <h3><i class="fas fa-chart-line"></i> Business Intelligence</h3>
-                        <div class="tech-list"><span class="tech-item">Power BI</span><span
-                                class="tech-item">Metabase</span><span class="tech-item">Data Warehouse</span><span
-                                class="tech-item">Crystal Reports</span></div>
-                    </div>
-                    <div class="tech-cat">
-                        <h3><i class="fas fa-database"></i> Bases de Datos</h3>
-                        <div class="tech-list"><span class="tech-item">SQL Server</span><span
-                                class="tech-item">MySQL</span><span class="tech-item">T-SQL</span></div>
-                    </div>
-                    <div class="tech-cat">
-                        <h3><i class="fas fa-code"></i> Desarrollo</h3>
-                        <div class="tech-list"><span class="tech-item">Angular</span><span
-                                class="tech-item">Node.js</span><span class="tech-item">JavaScript</span><span
-                                class="tech-item">APIs REST</span><span class="tech-item">Visual .NET</span></div>
-                    </div>
-                    <div class="tech-cat">
-                        <h3><i class="fas fa-server"></i> Infraestructura</h3>
-                        <div class="tech-list"><span class="tech-item">Windows Server</span><span
-                                class="tech-item">Linux</span><span class="tech-item">Active Directory</span><span
-                                class="tech-item">Firewall</span><span class="tech-item">Azure</span></div>
-                    </div>
-                    <div class="tech-cat">
-                        <h3><i class="fas fa-magic"></i> Automatización</h3>
-                        <div class="tech-list"><span class="tech-item">n8n</span><span class="tech-item">WhatsApp
-                                Business API</span><span class="tech-item">Agentes IA (OpenAI)</span><span
-                                class="tech-item">Integraciones API</span></div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Sección ¿Por qué trabajar conmigo? (optimizada para reclutadores) -->
-        <section>
-            <div class="container">
-                <h2 class="section-title">¿Por qué trabajar conmigo?</h2>
-                <div class="reason-grid">
-                    <div class="reason-item"><i class="fas fa-users"></i>
-                        <h3>Liderazgo de proyectos</h3>
-                        <p>Coordinación de equipos técnicos y relación con stakeholders de negocio</p>
-                    </div>
-                    <div class="reason-item"><i class="fas fa-cubes"></i>
-                        <h3>Experiencia ERP</h3>
-                        <p>Implementación y optimización de 2 ERPs clave</p>
-                    </div>
-                    <div class="reason-item"><i class="fas fa-robot"></i>
-                        <h3>Automatización empresarial</h3>
-                        <p>Integración CRM, WhatsApp, IA y flujos n8n</p>
-                    </div>
-                    <div class="reason-item"><i class="fas fa-chart-simple"></i>
-                        <h3>Business Intelligence</h3>
-                        <p>Dashboards ejecutivos y cultura de datos</p>
-                    </div>
-                    <div class="reason-item"><i class="fas fa-laptop"></i>
-                        <h3>Desarrollo a medida</h3>
-                        <p>Aplicaciones que resuelven problemas concretos</p>
-                    </div>
-                    <div class="reason-item"><i class="fas fa-shield"></i>
-                        <h3>Gestión de infraestructura</h3>
-                        <p>Servidores, Active Directory, respaldos</p>
-                    </div>
-                    <div class="reason-item"><i class="fas fa-bullseye"></i>
-                        <h3>Orientación a resultados</h3>
-                        <p>KPIs, eficiencia y mejoras medibles</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Sección "Socio de negocio" con lenguaje profesional actualizado -->
-        <section id="about">
-            <div class="container">
-                <h2 class="section-title">Socio de negocio, no solo analista</h2>
-                <div class="about-wrap">
-                    <div class="about-text">
-                        <p><strong>Ingeniero de Sistemas con 11 años de experiencia transversal:</strong> ventas, RRHH,
-                            finanzas, inventario, operaciones, producción, mercadeo y gerencia. Diseño e implemento
-                            soluciones que integran procesos, datos y tecnología para generar valor empresarial.
-                            Construyo soluciones completas que conectan Data Warehouse, APIs, automatización con IA,
-                            dashboards y aplicaciones internas.</p>
-                        <p><strong>¿Qué me diferencia?</strong> Combino visión de negocio y capacidad técnica para
-                            diseñar e implementar soluciones tecnológicas de extremo a extremo. Desde la identificación
-                            de un KPI crítico hasta la implementación del ETL, la API y el tablero que lo mide en tiempo
-                            real.</p>
-                        <p><strong>Resultados tangibles:</strong> Optimización de tiempos de consulta (de días a
-                            segundos), reducción significativa de reportes manuales, mejora en la precisión de procesos
-                            de nómina, catálogo de productos integrado al CRM e intranet corporativa con alta adopción.
-                        </p>
-                        <div class="contact-links" id="contacto">
-                            <a href="https://github.com/AlexGP-Dev" target="_blank" class="contact-icon"><i
-                                    class="fab fa-github"></i> GitHub</a>
-                            <a href="https://www.linkedin.com/in/alexgp-dev/" target="_blank" class="contact-icon"><i
-                                    class="fab fa-linkedin-in"></i> LinkedIn</a>
-                            <a href="mailto:alexgarciapal@hotmail.com" class="contact-icon"><i
-                                    class="fas fa-envelope"></i> alexgarciapal@hotmail.com</a>
-                            <a href="https://wa.me/573122962792?text=Hola%20Alex,%20vi%20tu%20portafolio%20y%20quiero%20explorar%20cómo%20mejorar%20mis%20decisiones%20con%20datos"
-                                target="_blank" class="contact-icon"><i class="fab fa-whatsapp"></i> +57 312 2962792</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <footer>
+    <!-- Resultados Destacados -->
+    <section id="resultados">
         <div class="container">
-            <p>© 2026 Alexander García Palacio — Conecto procesos, sistemas y datos para transformar información
-                dispersa en decisiones rentables.</p>
+            <h2 class="section-title">Resultados que respaldan mi gestión</h2>
+            <div class="highlight-grid">
+                <div class="highlight-card"><div class="highlight-icon"><i class="fas fa-building"></i></div><h3>2 ERP corporativos implementados</h3><p>HGI y DMS Advance, integración y parametrización total</p></div>
+                <div class="highlight-card"><div class="highlight-icon"><i class="fas fa-cloud"></i></div><h3>Data Warehouse en Azure</h3><p>Orquestación con Data Factory + transformación con Databricks + 18 años de datos</p></div>
+                <div class="highlight-card"><div class="highlight-icon"><i class="fas fa-users"></i></div><h3>+50 usuarios soportados y gestionados</h3><p>Mesa de ayuda, infraestructura y formación continua</p></div>
+                <div class="highlight-card"><div class="highlight-icon"><i class="fas fa-robot"></i></div><h3>Automatización CRM + WhatsApp + ERP</h3><p>Reducción significativa de tareas manuales en el área comercial</p></div>
+                <div class="highlight-card"><div class="highlight-icon"><i class="fas fa-chart-line"></i></div><h3>Dashboards gerenciales</h3><p>Visualización de datos para Ventas, RRHH, Inventarios y Producción</p></div>
+                <div class="highlight-card"><div class="highlight-icon"><i class="fas fa-laptop-code"></i></div><h3>6+ aplicaciones corporativas</h3><p>Soluciones a medida: biométrico, catálogo, intranet, APIs, etc.</p></div>
+            </div>
         </div>
-    </footer>
+    </section>
 
-    <!-- Lightbox -->
-    <div id="lightbox" class="lightbox-overlay">
-        <span class="lightbox-close">&times;</span>
-        <img class="lightbox-img" id="lightbox-img" alt="Vista ampliada">
+    <!-- Proyectos: CASOS DE ÉXITO (incluye DWH mejorado y nuevo proyecto de API) -->
+    <section id="proyectos">
+        <div class="container">
+            <h2 class="section-title">Casos de éxito: soluciones que transforman procesos</h2>
+            <div class="projects-grid">
+                <!-- Proyecto 1: Data Warehouse en Azure (mejorado con Data Factory + Databricks) -->
+                <div class="project-card">
+                    <img class="project-img" src="https://placehold.co/600x400/1e40af/white?text=Azure+DWH+Data+Factory+Databricks" alt="Data Warehouse en Azure con Data Factory y Databricks">
+                    <div class="project-content">
+                        <div class="project-title">☁️ Data Warehouse en Azure con 18 años de datos</div>
+                        <div class="project-problem"><strong>Problema:</strong> Datos fragmentados en múltiples ERP y sistemas → reportes históricos tomaban días, sin trazabilidad y sin capacidad de escalar.</div>
+                        <div class="project-solution"><strong>Solución:</strong> Arquitectura de datos en Azure: orquestación ETL con <strong>Azure Data Factory</strong>, transformación avanzada con <strong>Databricks</strong> (PySpark) y modelo dimensional en SQL Server. Ingesta incremental desde múltiples fuentes (ERP, archivos, APIs).</div>
+                        <div class="project-tech"><span class="tech-badge">Azure Data Factory</span><span class="tech-badge">Databricks</span><span class="tech-badge">SQL Server</span><span class="tech-badge">PySpark</span><span class="tech-badge">Power BI</span><span class="tech-badge">n8n</span></div>
+                        <div class="project-impact"><strong>📊 Resultado:</strong> Procesamiento de 18 años de datos en minutos · Escalabilidad en la nube · Reducción de costos de infraestructura · Dashboards con latencia de segundos · Análisis predictivo habilitado.</div>
+                    </div>
+                </div>
+
+                <!-- Proyecto 2: API Gateway en Azure App Service (NUEVO) -->
+                <div class="project-card">
+                    <img class="project-img" src="https://placehold.co/600x400/2563eb/white?text=API+Gateway+Azure+App+Service" alt="API Gateway en Azure App Service">
+                    <div class="project-content">
+                        <div class="project-title">🔌 API Gateway en Azure App Service</div>
+                        <div class="project-problem"><strong>Problema:</strong> Sistemas internos (ERP, CRM, bases de datos) desconectados. Cada integración requería desarrollo ad-hoc, sin punto único de acceso, seguridad inconsistente y tiempos de desarrollo elevados.</div>
+                        <div class="project-solution"><strong>Solución:</strong> Desarrollo y despliegue de una <strong>API RESTful</strong> con Node.js + Express en <strong>Azure App Service</strong> con CI/CD desde GitHub. Centraliza el acceso a: SQL Server interno, Data Warehouse (consultas agregadas), ERP vía API, y autenticación con JWT. Documentación con Swagger.</div>
+                        <div class="project-tech"><span class="tech-badge">Node.js</span><span class="tech-badge">Express</span><span class="tech-badge">Azure App Service</span><span class="tech-badge">GitHub Actions</span><span class="tech-badge">JWT</span><span class="tech-badge">Swagger</span><span class="tech-badge">Azure SQL</span></div>
+                        <div class="project-impact"><strong>🚀 Impacto:</strong> Reducción del 70% en tiempo de desarrollo de nuevas integraciones · Centralización de lógica de negocio · Seguridad y auditoría unificada · Endpoints consumidos por el portal comercial, CRM, y aplicaciones móviles.</div>
+                    </div>
+                </div>
+
+                <!-- Proyecto 3: CRM + IA (automatización comercial) -->
+                <div class="project-card">
+                    <img class="project-img" src="https://i.ibb.co/Ps6rkphY/IA-para-Kommo.webp" alt="Agente IA Kommo">
+                    <div class="project-content">
+                        <div class="project-title">🤝 CRM + IA: datos de clientes en tiempo real</div>
+                        <div class="project-problem"><strong>Problema:</strong> Equipo comercial con información incompleta y desactualizada → pérdida de oportunidades.</div>
+                        <div class="project-solution"><strong>Solución:</strong> Integración n8n + Kommo + OpenAI + WhatsApp API, agente IA 24/7.</div>
+                        <div class="project-tech"><span class="tech-badge">n8n</span><span class="tech-badge">Kommo</span><span class="tech-badge">OpenAI</span><span class="tech-badge">API REST</span></div>
+                        <div class="project-impact"><strong>📈 Impacto:</strong> Disminución del 70% en búsquedas manuales de información · Agente IA resolviendo consultas frecuentes de forma autónoma.</div>
+                    </div>
+                </div>
+
+                <!-- Proyecto 4: Tableros Power BI -->
+                <div class="project-card">
+                    <img class="project-img" src="https://placehold.co/600x400/2563eb/white?text=Power+BI+Dashboards" alt="Dashboards ERP">
+                    <div class="project-content">
+                        <div class="project-title">📊 Autonomía analítica para cada área</div>
+                        <div class="project-problem"><strong>Problema:</strong> Áreas dependían de reportes manuales en Excel → versiones inconsistentes, demoras.</div>
+                        <div class="project-solution"><strong>Solución:</strong> Dashboards en Power BI conectados al DWH + Crystal Reports para formatos específicos.</div>
+                        <div class="project-tech"><span class="tech-badge">Power BI</span><span class="tech-badge">Crystal Reports</span><span class="tech-badge">SQL analítico</span></div>
+                        <div class="project-impact"><strong>⚡ Resultado:</strong> Reducción del 80% en reportes manuales · Información disponible en tiempo real para la toma de decisiones.</div>
+                    </div>
+                </div>
+
+                <!-- Proyecto 5: App biométrica (RRHH) -->
+                <div class="project-card">
+                    <img class="project-img" src="https://i.ibb.co/Wv4hY0Df/Biometrico.webp" alt="Biométrico RRHH">
+                    <div class="project-content">
+                        <div class="project-title">👥 Control de asistencia + nómina sin errores</div>
+                        <div class="project-problem"><strong>Problema:</strong> Gestión de turnos y horas extras con hojas de cálculo → conflictos salariales.</div>
+                        <div class="project-solution"><strong>Solución:</strong> Desarrollo de aplicación en Visual .NET con T-SQL, cálculo automático de horas nocturnas/festivas.</div>
+                        <div class="project-tech"><span class="tech-badge">Visual .NET</span><span class="tech-badge">T-SQL</span></div>
+                        <div class="project-impact"><strong>✅ Impacto:</strong> Disminución del 95% en errores de liquidación de nómina · Ahorro significativo de horas hombre en el área de RRHH.</div>
+                    </div>
+                </div>
+
+                <!-- Proyecto 6: App comercial consulta rápida -->
+                <div class="project-card">
+                    <img class="project-img" src="https://i.ibb.co/VpMXtDRw/Cliente-360.webp" alt="App equipo comercial">
+                    <div class="project-content">
+                        <div class="project-title">📱 Equipo comercial: historial en 5 segundos</div>
+                        <div class="project-problem"><strong>Problema:</strong> Consultar compras históricas tomaba 10 minutos y múltiples sistemas.</div>
+                        <div class="project-solution"><strong>Solución:</strong> API Node.js consumiendo DWH, interfaz simple para agentes.</div>
+                        <div class="project-tech"><span class="tech-badge">Node.js</span><span class="tech-badge">SQL</span><span class="tech-badge">API DWH</span></div>
+                        <div class="project-impact"><strong>⏱️ Resultado:</strong> Mejora en la eficiencia del equipo comercial, reduciendo drásticamente los tiempos de respuesta a clientes.</div>
+                    </div>
+                </div>
+
+                <!-- Proyecto 7: Catálogo unificado -->
+                <div class="project-card">
+                    <img class="project-img" src="https://i.ibb.co/My6c7MyB/Catalogo-Productos.webp" alt="Catálogo productos">
+                    <div class="project-content">
+                        <div class="project-title">📦 Catálogo unificado desde stock del ERP</div>
+                        <div class="project-problem"><strong>Problema:</strong> No existía catálogo digital actualizado para cotizar o usar en CRM.</div>
+                        <div class="project-solution"><strong>Solución:</strong> Endpoint REST que expone productos, precios y stock en tiempo real desde el ERP.</div>
+                        <div class="project-tech"><span class="tech-badge">Node.js</span><span class="tech-badge">API REST</span><span class="tech-badge">SQL</span></div>
+                        <div class="project-impact"><strong>📉 Resultado:</strong> Reducción del tiempo de cotización · Información de disponibilidad en tiempo real para clientes y asesores.</div>
+                    </div>
+                </div>
+
+                <!-- Proyecto 8: Intranet integradora -->
+                <div class="project-card">
+                    <img class="project-img" src="https://i.ibb.co/0V8VYtBf/Portal-inter.webp" alt="Intranet empleados">
+                    <div class="project-content">
+                        <div class="project-title">🌐 Intranet integradora: gestión y beneficios</div>
+                        <div class="project-problem"><strong>Problema:</strong> Aplicaciones, reportes y beneficios dispersos; empleados perdían tiempo.</div>
+                        <div class="project-solution"><strong>Solución:</strong> Portal central en Azure con GitHub Actions, integración de directorio, beneficios, dashboards.</div>
+                        <div class="project-tech"><span class="tech-badge">Azure</span><span class="tech-badge">GitHub Actions</span><span class="tech-badge">Node.js</span></div>
+                        <div class="project-impact"><strong>🏢 Impacto:</strong> Optimización en la comunicación interna y acceso a la información, reduciendo consultas internas y mejorando la experiencia del empleado.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tecnologías (actualizado con Data Factory, Databricks, App Service) -->
+    <section id="tecnologias">
+        <div class="container">
+            <h2 class="section-title">Stack tecnológico</h2>
+            <div class="tech-categories">
+                <div class="tech-cat"><h3><i class="fas fa-cloud"></i> Azure & Cloud</h3><div class="tech-list"><span class="tech-item">Azure Data Factory</span><span class="tech-item">Databricks</span><span class="tech-item">Azure App Service</span><span class="tech-item">Azure SQL</span><span class="tech-item">Azure DevOps</span><span class="tech-item">GitHub Actions</span></div></div>
+                <div class="tech-cat"><h3><i class="fas fa-chart-pie"></i> ERP</h3><div class="tech-list"><span class="tech-item">HGI</span><span class="tech-item">DMS Advance</span></div></div>
+                <div class="tech-cat"><h3><i class="fas fa-chart-line"></i> Business Intelligence</h3><div class="tech-list"><span class="tech-item">Power BI</span><span class="tech-item">Metabase</span><span class="tech-item">Data Warehouse</span><span class="tech-item">Crystal Reports</span></div></div>
+                <div class="tech-cat"><h3><i class="fas fa-database"></i> Bases de Datos</h3><div class="tech-list"><span class="tech-item">SQL Server</span><span class="tech-item">MySQL</span><span class="tech-item">T-SQL</span></div></div>
+                <div class="tech-cat"><h3><i class="fas fa-code"></i> Desarrollo</h3><div class="tech-list"><span class="tech-item">Angular</span><span class="tech-item">Node.js</span><span class="tech-item">JavaScript</span><span class="tech-item">APIs REST</span><span class="tech-item">Visual .NET</span><span class="tech-item">PySpark</span></div></div>
+                <div class="tech-cat"><h3><i class="fas fa-server"></i> Infraestructura</h3><div class="tech-list"><span class="tech-item">Windows Server</span><span class="tech-item">Linux</span><span class="tech-item">Active Directory</span><span class="tech-item">Firewall</span></div></div>
+                <div class="tech-cat"><h3><i class="fas fa-magic"></i> Automatización</h3><div class="tech-list"><span class="tech-item">n8n</span><span class="tech-item">WhatsApp Business API</span><span class="tech-item">Agentes IA (OpenAI)</span><span class="tech-item">Integraciones API</span></div></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ¿Por qué trabajar conmigo? -->
+    <section>
+        <div class="container">
+            <h2 class="section-title">¿Por qué trabajar conmigo?</h2>
+            <div class="reason-grid">
+                <div class="reason-item"><i class="fas fa-users"></i><h3>Liderazgo de proyectos</h3><p>Coordinación de equipos técnicos y relación con stakeholders de negocio</p></div>
+                <div class="reason-item"><i class="fas fa-cubes"></i><h3>Experiencia ERP</h3><p>Implementación y optimización de 2 ERPs clave</p></div>
+                <div class="reason-item"><i class="fas fa-cloud"></i><h3>Arquitectura en la nube</h3><p>Azure Data Factory, Databricks y App Service</p></div>
+                <div class="reason-item"><i class="fas fa-robot"></i><h3>Automatización empresarial</h3><p>Integración CRM, WhatsApp, IA y flujos n8n</p></div>
+                <div class="reason-item"><i class="fas fa-chart-simple"></i><h3>Business Intelligence</h3><p>Dashboards ejecutivos y cultura de datos</p></div>
+                <div class="reason-item"><i class="fas fa-laptop"></i><h3>Desarrollo a medida</h3><p>Aplicaciones que resuelven problemas concretos</p></div>
+                <div class="reason-item"><i class="fas fa-shield"></i><h3>Gestión de infraestructura</h3><p>Servidores, Active Directory, respaldos</p></div>
+                <div class="reason-item"><i class="fas fa-bullseye"></i><h3>Orientación a resultados</h3><p>KPIs, eficiencia y mejoras medibles</p></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección "Socio de negocio" -->
+    <section id="about">
+        <div class="container">
+            <h2 class="section-title">Socio de negocio, no solo analista</h2>
+            <div class="about-wrap">
+                <div class="about-text">
+                    <p><strong>Ingeniero de Sistemas con 11 años de experiencia transversal:</strong> ventas, RRHH, finanzas, inventario, operaciones, producción, mercadeo y gerencia. Diseño e implemento soluciones que integran procesos, datos y tecnología para generar valor empresarial. Construyo soluciones completas que conectan Data Warehouse en Azure, APIs, automatización con IA, dashboards y aplicaciones internas.</p>
+                    <p><strong>¿Qué me diferencia?</strong> Combino visión de negocio y capacidad técnica para diseñar e implementar soluciones tecnológicas de extremo a extremo. Desde la identificación de un KPI crítico hasta la implementación de la orquestación en Data Factory, transformación en Databricks y la API que lo consume en tiempo real.</p>
+                    <p><strong>Resultados tangibles:</strong> Optimización de tiempos de consulta (de días a segundos), reducción significativa de reportes manuales, mejora en la precisión de procesos de nómina, catálogo de productos integrado al CRM, API Gateway centralizada e intranet corporativa con alta adopción.</p>
+                    <div class="contact-links" id="contacto">
+                        <a href="https://github.com/AlexGP-Dev" target="_blank" class="contact-icon"><i class="fab fa-github"></i> GitHub</a>
+                        <a href="https://www.linkedin.com/in/alexgp-dev/" target="_blank" class="contact-icon"><i class="fab fa-linkedin-in"></i> LinkedIn</a>
+                        <a href="mailto:alexgarciapal@hotmail.com" class="contact-icon"><i class="fas fa-envelope"></i> alexgarciapal@hotmail.com</a>
+                        <a href="https://wa.me/573122962792?text=Hola%20Alex,%20vi%20tu%20portafolio%20y%20quiero%20explorar%20cómo%20mejorar%20mis%20decisiones%20con%20datos" target="_blank" class="contact-icon"><i class="fab fa-whatsapp"></i> +57 312 2962792</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <div class="container">
+        <p>© 2026 Alexander García Palacio — Conecto procesos, sistemas y datos para transformar información dispersa en decisiones rentables.</p>
     </div>
+</footer>
 
-    <script>
-        // Menú móvil
-        const toggleBtn = document.getElementById('mobileMenuBtn');
-        const navLinks = document.getElementById('navLinks');
-        if (toggleBtn) {
-            toggleBtn.addEventListener('click', () => navLinks.classList.toggle('show'));
-            document.querySelectorAll('.nav-links a').forEach(link => {
-                link.addEventListener('click', () => navLinks.classList.remove('show'));
-            });
-        }
-        // Lightbox
-        document.addEventListener('DOMContentLoaded', function () {
-            const images = document.querySelectorAll('.project-img');
-            const lightbox = document.getElementById('lightbox');
-            const lightboxImg = document.getElementById('lightbox-img');
-            const closeBtn = document.querySelector('.lightbox-close');
-            function openLightbox(src) { lightboxImg.src = src; lightbox.style.display = 'flex'; document.body.style.overflow = 'hidden'; }
-            function closeLightbox() { lightbox.style.display = 'none'; document.body.style.overflow = ''; lightboxImg.src = ''; }
-            images.forEach(img => img.addEventListener('click', (e) => { e.stopPropagation(); if (img.src) openLightbox(img.src); }));
-            lightbox?.addEventListener('click', closeLightbox);
-            closeBtn?.addEventListener('click', (e) => { e.stopPropagation(); closeLightbox(); });
-            if (lightboxImg) lightboxImg.addEventListener('click', e => e.stopPropagation());
+<!-- Lightbox -->
+<div id="lightbox" class="lightbox-overlay">
+    <span class="lightbox-close">&times;</span>
+    <img class="lightbox-img" id="lightbox-img" alt="Vista ampliada">
+</div>
+
+<script>
+    // Menú móvil
+    const toggleBtn = document.getElementById('mobileMenuBtn');
+    const navLinks = document.getElementById('navLinks');
+    if(toggleBtn) {
+        toggleBtn.addEventListener('click', () => navLinks.classList.toggle('show'));
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => navLinks.classList.remove('show'));
         });
-    </script>
-    <!-- 
-    NOTA PARA MÉTRICAS REALES:
-    - Si dispones de cifras exactas y defendibles (ej. ahorro en USD, horas exactas recuperadas), puedes actualizar el texto en las tarjetas de "Resultados Destacados" y en los "Proyectos".
-    - Las expresiones actuales reflejan un lenguaje ejecutivo y profesional.
--->
+    }
+    // Lightbox
+    document.addEventListener('DOMContentLoaded', function () {
+        const images = document.querySelectorAll('.project-img');
+        const lightbox = document.getElementById('lightbox');
+        const lightboxImg = document.getElementById('lightbox-img');
+        const closeBtn = document.querySelector('.lightbox-close');
+        function openLightbox(src) { lightboxImg.src = src; lightbox.style.display = 'flex'; document.body.style.overflow = 'hidden'; }
+        function closeLightbox() { lightbox.style.display = 'none'; document.body.style.overflow = ''; lightboxImg.src = ''; }
+        images.forEach(img => img.addEventListener('click', (e) => { e.stopPropagation(); if(img.src) openLightbox(img.src); }));
+        lightbox?.addEventListener('click', closeLightbox);
+        closeBtn?.addEventListener('click', (e) => { e.stopPropagation(); closeLightbox(); });
+        if(lightboxImg) lightboxImg.addEventListener('click', e => e.stopPropagation());
+    });
+</script>
 </body>
-
 </html>
